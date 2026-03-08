@@ -14,11 +14,12 @@ export const INTRO_TEXT: LocalizedContent = {
 
 export const TAB2_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
-function createModalContent(raw: string, tooltips: Record<number, string>): ModalContent {
-  return { rawText: raw, tooltips };
+function createModalContent(title: string, raw: string, tooltips: Record<number, string>): ModalContent {
+  return { title, rawText: raw, tooltips };
 }
 
 const modalContent1: ModalContent = createModalContent(
+  'Capítulo I',
   'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   {
     1: 'Phrase describing the first highlighted concept in the chronicle.',
@@ -27,6 +28,7 @@ const modalContent1: ModalContent = createModalContent(
 );
 
 const modalContent2: ModalContent = createModalContent(
+  'Capítulo II',
   'Duis aute irure dolor in {1}reprehenderit in voluptate{/1} velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, {2}sunt in culpa qui officia{/2} deserunt mollit anim id est laborum.',
   {
     1: 'Descriptive tooltip for the first highlighted phrase.',
@@ -35,6 +37,7 @@ const modalContent2: ModalContent = createModalContent(
 );
 
 const modalContent3: ModalContent = createModalContent(
+  'Capítulo III',
   'Curabitur pretium tincidunt lacus. {1}Nulla facilisi{/1}. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. {2}Vestibulum sapien{/2} proin quam.',
   {
     1: 'A brief descriptive message for this term.',

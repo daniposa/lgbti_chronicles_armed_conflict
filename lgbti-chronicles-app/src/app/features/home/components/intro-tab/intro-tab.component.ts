@@ -56,10 +56,15 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
     }
     .cards-section { margin-top: var(--space-2xl); }
     .cards-row {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: var(--space-md);
-      flex-wrap: wrap;
       margin-bottom: var(--space-xl);
+    }
+    @media (max-width: 768px) {
+      .cards-row {
+        grid-template-columns: 1fr;
+      }
     }
     .image-wrapper {
       margin-top: var(--space-xl);

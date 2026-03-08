@@ -7,6 +7,7 @@ export interface LocalizedContent {
 }
 
 export interface ModalContent {
+  title: string;
   rawText: string;
   tooltips: Record<number, string>;
 }

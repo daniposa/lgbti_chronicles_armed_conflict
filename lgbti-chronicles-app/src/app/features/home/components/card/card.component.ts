@@ -22,8 +22,10 @@ import type { Language } from '../../../../core/services/language.service';
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.25s ease;
-      flex: 1;
-      min-width: 200px;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background: var(--color-paper);
       box-shadow: var(--shadow-card);
     }
