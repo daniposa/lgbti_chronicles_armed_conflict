@@ -43,39 +43,48 @@ import { SecondTabComponent } from './components/second-tab/second-tab.component
   styles: [`
     .home { min-height: 100vh; }
     .header {
-      padding: 24px;
-      border-bottom: 1px solid #eee;
-      background: #fafafa;
+      padding: var(--space-lg) var(--space-xl);
+      border-bottom: 1px solid var(--color-border);
+      background: var(--color-paper-warm);
     }
     .header h1 {
       margin: 0;
-      font-size: 1.75rem;
-      font-weight: 600;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--color-ink);
     }
-    .tabs { padding: 0 24px 48px; }
+    .tabs {
+      padding: 0 var(--space-xl) var(--space-2xl);
+      max-width: var(--content-max);
+      margin: 0 auto;
+    }
     .tab-buttons {
       display: flex;
-      gap: 8px;
-      margin-top: 20px;
-      border-bottom: 2px solid #eee;
+      gap: var(--space-xs);
+      margin-top: var(--space-lg);
+      border-bottom: 1px solid var(--color-border);
     }
     .tab-btn {
-      padding: 12px 24px;
+      padding: var(--space-sm) var(--space-md);
       border: none;
       background: none;
       cursor: pointer;
-      font-size: 1rem;
-      color: #666;
-      border-bottom: 3px solid transparent;
-      margin-bottom: -2px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--color-ink-muted);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.2s, border-color 0.2s;
     }
-    .tab-btn:hover { color: #333; }
+    .tab-btn:hover { color: var(--color-ink); }
     .tab-btn.active {
-      color: #4a90d9;
-      border-bottom-color: #4a90d9;
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
       font-weight: 500;
     }
-    .tab-content { margin-top: 24px; }
+    .tab-content { margin-top: var(--space-xl); }
   `]
 })
 export class HomeComponent {

@@ -35,21 +35,40 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
     </div>
   `,
   styles: [`
-    .intro-tab { padding: 24px 0; }
-    .intro-header { margin-bottom: 20px; }
+    .intro-tab { padding: var(--space-lg) 0; }
+    .intro-header { margin-bottom: var(--space-lg); }
     .intro-text {
-      margin-bottom: 48px;
-      line-height: 1.7;
-      max-width: 800px;
+      margin-bottom: var(--space-2xl);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      max-width: var(--reading-width);
+      color: var(--color-ink);
+      font-style: normal;
     }
-    .cards-section { margin-top: 32px; }
+    .intro-text::first-letter {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      float: left;
+      line-height: 1;
+      margin-right: 0.35rem;
+      margin-top: 0.05rem;
+      color: var(--color-ink);
+    }
+    .cards-section { margin-top: var(--space-2xl); }
     .cards-row {
       display: flex;
-      gap: 16px;
+      gap: var(--space-md);
       flex-wrap: wrap;
-      margin-bottom: 24px;
+      margin-bottom: var(--space-xl);
     }
-    .image-wrapper { margin-top: 24px; }
+    .image-wrapper {
+      margin-top: var(--space-xl);
+      padding: var(--space-md);
+      background: var(--color-paper-warm);
+      border-radius: 4px;
+      border: 1px solid var(--color-border-soft);
+      box-shadow: var(--shadow-soft);
+    }
   `]
 })
 export class IntroTabComponent {

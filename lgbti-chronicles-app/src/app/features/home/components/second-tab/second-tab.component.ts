@@ -15,9 +15,14 @@ import { LanguageToggleComponent } from '../language-toggle/language-toggle.comp
     </div>
   `,
   styles: [`
-    .second-tab { padding: 24px 0; }
-    .tab-header { margin-bottom: 20px; }
-    .tab-text { line-height: 1.7; max-width: 800px; }
+    .second-tab { padding: var(--space-lg) 0; }
+    .tab-header { margin-bottom: var(--space-lg); }
+    .tab-text {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      max-width: var(--reading-width);
+      color: var(--color-ink);
+    }
   `]
 })
 export class SecondTabComponent {

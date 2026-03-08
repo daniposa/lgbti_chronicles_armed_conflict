@@ -27,41 +27,47 @@ import type { ModalContent } from '../../../../core/models/content.model';
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.5);
+      background: rgba(44, 36, 32, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 9999;
     }
     .modal-box {
-      background: white;
-      border-radius: 12px;
-      max-width: 90vw;
+      background: var(--color-paper);
+      border-radius: 4px;
+      max-width: min(90vw, var(--reading-width));
       max-height: 80vh;
       overflow: auto;
-      padding: 24px;
+      padding: var(--space-xl);
       position: relative;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      box-shadow: var(--shadow-modal);
+      border: 1px solid var(--color-border);
     }
     .modal-close {
       position: absolute;
-      top: 12px;
-      right: 12px;
+      top: var(--space-sm);
+      right: var(--space-sm);
       background: none;
       border: none;
-      font-size: 28px;
+      font-size: 1.75rem;
       cursor: pointer;
-      color: #666;
+      color: var(--color-ink-muted);
       line-height: 1;
+      font-family: var(--font-body);
+      transition: color 0.2s;
     }
-    .modal-close:hover { color: #333; }
+    .modal-close:hover { color: var(--color-ink); }
     .modal-body {
-      padding-right: 36px;
-      line-height: 1.6;
+      padding-right: var(--space-xl);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--color-ink);
     }
     .highlight {
-      background: rgba(100, 150, 255, 0.2);
-      padding: 0 2px;
+      background: rgba(139, 105, 20, 0.15);
+      padding: 0 0.15em;
+      border-bottom: 1px dotted var(--color-accent);
     }
   `]
 })

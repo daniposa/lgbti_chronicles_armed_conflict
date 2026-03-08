@@ -19,18 +19,29 @@ import { LanguageService, type Language } from '../../../../core/services/langua
     </div>
   `,
   styles: [`
-    .toggle { display: flex; gap: 8px; }
+    .toggle { display: flex; gap: var(--space-xs); }
     .lang-btn {
-      padding: 8px 16px;
-      border: 1px solid #ccc;
-      background: white;
-      border-radius: 6px;
+      padding: var(--space-xs) var(--space-sm);
+      border: 1px solid var(--color-border);
+      background: var(--color-paper);
+      border-radius: 4px;
       cursor: pointer;
-      font-size: 14px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--color-ink-muted);
+      transition: all 0.2s;
     }
-    .lang-btn:hover:not(:disabled) { background: #f5f5f5; }
-    .lang-btn.active { background: #4a90d9; color: white; border-color: #4a90d9; }
-    .lang-btn:disabled { cursor: default; opacity: 0.9; }
+    .lang-btn:hover:not(:disabled) {
+      background: var(--color-paper-warm);
+      color: var(--color-ink);
+      border-color: var(--color-ink-light);
+    }
+    .lang-btn.active {
+      background: var(--color-ink);
+      color: var(--color-paper);
+      border-color: var(--color-ink);
+    }
+    .lang-btn:disabled { cursor: default; opacity: 0.7; }
   `]
 })
 export class LanguageToggleComponent {

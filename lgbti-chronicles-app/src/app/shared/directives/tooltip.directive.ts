@@ -21,6 +21,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
     this.el.nativeElement.style.cursor = 'help';
     this.el.nativeElement.style.textDecoration = 'underline';
     this.el.nativeElement.style.textDecorationStyle = 'dotted';
+    this.el.nativeElement.style.textUnderlineOffset = '2px';
   }
 
   ngOnDestroy(): void {
@@ -35,15 +36,8 @@ export class TooltipDirective implements OnInit, OnDestroy {
     this.tooltipEl.textContent = this.appTooltip;
     this.tooltipEl.style.cssText = `
       position: fixed;
-      background: rgba(0,0,0,0.85);
-      color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      max-width: 280px;
       z-index: 10000;
       pointer-events: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     `;
     document.body.appendChild(this.tooltipEl);
     this.positionTooltip();

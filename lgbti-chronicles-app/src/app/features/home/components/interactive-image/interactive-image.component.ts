@@ -29,6 +29,8 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       position: relative;
       display: inline-block;
       max-width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
     }
     .image-container img {
       display: block;
@@ -38,11 +40,11 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
     .hotspot {
       position: absolute;
       cursor: pointer;
-      background: rgba(100, 150, 255, 0.2);
-      transition: background 0.2s;
+      background: rgba(44, 36, 32, 0.08);
+      transition: background 0.25s ease;
     }
     .hotspot:hover {
-      background: rgba(100, 150, 255, 0.4);
+      background: rgba(139, 105, 20, 0.2);
     }
   `]
 })

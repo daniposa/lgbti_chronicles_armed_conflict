@@ -17,24 +17,39 @@ import type { Language } from '../../../../core/services/language.service';
   `,
   styles: [`
     .card {
-      padding: 20px;
-      border: 2px solid #ddd;
-      border-radius: 12px;
+      padding: var(--space-md) var(--space-lg);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.25s ease;
       flex: 1;
-      min-width: 180px;
+      min-width: 200px;
+      background: var(--color-paper);
+      box-shadow: var(--shadow-card);
     }
     .card:hover {
-      border-color: #999;
-      background: #f9f9f9;
+      border-color: var(--color-ink-light);
+      box-shadow: var(--shadow-soft);
+      background: var(--color-paper-warm);
     }
     .card.selected {
-      border-color: #4a90d9;
-      background: #e8f4fc;
+      border-color: var(--color-accent);
+      background: var(--color-paper-warm);
+      box-shadow: var(--shadow-soft);
     }
-    .card h3 { margin: 0 0 8px 0; font-size: 1.1rem; }
-    .card p { margin: 0; font-size: 0.9rem; color: #555; }
+    .card h3 {
+      margin: 0 0 var(--space-xs) 0;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--color-ink);
+    }
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--color-ink-muted);
+      line-height: 1.5;
+    }
   `]
 })
 export class CardComponent {

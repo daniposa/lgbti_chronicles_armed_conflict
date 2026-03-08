@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+/* LGTBI Chronicles - Book of Tales design system */
+/* Inspired by literary, atmospheric storytelling (ironhill.au) */
+
+:root {
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Lora', Georgia, serif;
+
+  /* Color palette - warm, book-like, dignified */
+  --color-paper: #f8f4ef;
+  --color-paper-warm: #f5f0e8;
+  --color-ink: #2c2420;
+  --color-ink-muted: #5c5248;
+  --color-ink-light: #7a6f64;
+  --color-accent: #8b6914;
+  --color-accent-hover: #6b5010;
+  --color-border: #e0d8cf;
+  --color-border-soft: #ebe6e0;
+
+  /* Shadows - subtle, organic */
+  --shadow-soft: 0 2px 12px rgba(44, 36, 32, 0.06);
+  --shadow-modal: 0 24px 48px rgba(44, 36, 32, 0.12);
+  --shadow-card: 0 4px 20px rgba(44, 36, 32, 0.04);
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Reading width - optimal for prose */
+  --reading-width: 42rem;
+  --content-max: 56rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-ink);
+  background: var(--color-paper);
+  min-height: 100vh;
+}
+
+/* Tooltip - matches theme */
+.app-tooltip {
+  font-family: var(--font-body) !important;
+  font-size: 0.85rem !important;
+  background: var(--color-ink) !important;
+  color: var(--color-paper) !important;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 4px !important;
+  max-width: 280px !important;
+  line-height: 1.5 !important;
+  box-shadow: var(--shadow-modal) !important;
+}
