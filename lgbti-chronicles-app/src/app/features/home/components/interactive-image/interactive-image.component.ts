@@ -59,7 +59,7 @@ export class InteractiveImageComponent {
     return this.card?.hotspots ?? [];
   }
 
-  modalContent: import('../../../../core/models/content.model').ModalContent | null = null;
+  modalContent: import('../../../../core/models/content.model').LocalizedModalContent | null = null;
 
   openModal(hotspot: Hotspot): void {
     this.modalContent = hotspot.modalContent;

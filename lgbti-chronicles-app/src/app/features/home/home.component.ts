@@ -1,6 +1,7 @@
-import { Component, signal, computed } from '@angular/core';
+import { Component, signal, computed, inject, effect } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { LanguageService } from '../../core/services/language.service';
-import { PROJECT_TITLE } from '../../core/data/content.data';
+import { PAGE_CONFIG } from '../../core/data/content.data';
 import { IntroTabComponent } from './components/intro-tab/intro-tab.component';
 import { SecondTabComponent } from './components/second-tab/second-tab.component';
 
@@ -20,14 +21,14 @@ import { SecondTabComponent } from './components/second-tab/second-tab.component
             [class.active]="activeTab() === 'intro'"
             (click)="setTab('intro')"
           >
-            Introducción
+            {{ tabIntroLabel() }}
           </button>
           <button
             class="tab-btn"
             [class.active]="activeTab() === 'second'"
             (click)="setTab('second')"
           >
-            Segundo Tab
+            {{ tabSecondLabel() }}
           </button>
         </div>
         <div class="tab-content">
@@ -88,10 +89,18 @@ import { SecondTabComponent } from './components/second-tab/second-tab.component
   `]
 })
 export class HomeComponent {
+  private langService = inject(LanguageService);
+  private titleService = inject(Title);
   activeTab = signal<'intro' | 'second'>('intro');
-  title = computed(() => PROJECT_TITLE[this.langService.language()]);
+  title = computed(() => PAGE_CONFIG.title[this.langService.language()]);
+  tabIntroLabel = computed(() => PAGE_CONFIG.tabs.intro[this.langService.language()]);
+  tabSecondLabel = computed(() => PAGE_CONFIG.tabs.second[this.langService.language()]);
 
-  constructor(private langService: LanguageService) {}
+  constructor() {
+    effect(() => {
+      this.titleService.setTitle(this.title());
+    });
+  }
 
   setTab(tab: 'intro' | 'second'): void {
     this.activeTab.set(tab);

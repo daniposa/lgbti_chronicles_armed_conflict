@@ -12,13 +12,19 @@ export interface ModalContent {
   tooltips: Record<number, string>;
 }
 
+export interface LocalizedModalContent {
+  title: LocalizedContent;
+  rawText: LocalizedContent;
+  tooltips: Record<number, LocalizedContent>;
+}
+
 export interface Hotspot {
   id: string;
   x: number;
   y: number;
   width: number;
   height: number;
-  modalContent: ModalContent;
+  modalContent: LocalizedModalContent;
 }
 
 export interface CardData {

@@ -1,7 +1,13 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject, computed, signal } from '@angular/core';
 import { TextParserService, type TextSegment } from '../../../../core/services/text-parser.service';
 import { TooltipDirective } from '../../../../shared/directives/tooltip.directive';
-import type { ModalContent } from '../../../../core/models/content.model';
+import { LanguageService } from '../../../../core/services/language.service';
+import type { LocalizedModalContent } from '../../../../core/models/content.model';
+
+interface ResolvedModalContent {
+  title: string;
+  segments: TextSegment[];
+}
 
 @Component({
   selector: 'app-modal-content',
@@ -11,18 +17,20 @@ import type { ModalContent } from '../../../../core/models/content.model';
     <div class="modal-backdrop" (click)="close.emit()">
       <div class="modal-box" (click)="$event.stopPropagation()">
         <button class="modal-close" (click)="close.emit()" aria-label="Close">&times;</button>
-        @if (modalTitle) {
-          <h2 class="modal-title">{{ modalTitle }}</h2>
-        }
-        <div class="modal-body chapter-text">
-          @for (seg of segments; track $index) {
-            @if (seg.isHighlight) {
-              <span [appTooltip]="seg.tooltip ?? ''" class="highlight">{{ seg.text }}</span>
-            } @else {
-              <span>{{ seg.text }}</span>
-            }
+        @if (resolvedContent(); as content) {
+          @if (content.title) {
+            <h2 class="modal-title">{{ content.title }}</h2>
           }
-        </div>
+          <div class="modal-body chapter-text">
+            @for (seg of content.segments; track $index) {
+              @if (seg.isHighlight) {
+                <span [appTooltip]="seg.tooltip ?? ''" class="highlight">{{ seg.text }}</span>
+              } @else {
+                <span>{{ seg.text }}</span>
+              }
+            }
+          </div>
+        }
       </div>
     </div>
   `,
@@ -92,19 +100,27 @@ import type { ModalContent } from '../../../../core/models/content.model';
   `]
 })
 export class ModalContentComponent {
-  @Input() set content(value: ModalContent | null) {
-    if (value) {
-      this.modalTitle = value.title;
-      this.segments = this.parser.parseMarkedText(value.rawText, value.tooltips);
-    } else {
-      this.modalTitle = '';
-      this.segments = [];
-    }
+  private parser = inject(TextParserService);
+  private langService = inject(LanguageService);
+
+  @Input() set content(value: LocalizedModalContent | null) {
+    this.localizedContent.set(value);
   }
   @Output() close = new EventEmitter<void>();
 
-  modalTitle = '';
-  segments: TextSegment[] = [];
+  private localizedContent = signal<LocalizedModalContent | null>(null);
 
-  constructor(private parser: TextParserService) {}
+  resolvedContent = computed<ResolvedModalContent | null>(() => {
+    const lc = this.localizedContent();
+    const lang = this.langService.language();
+    if (!lc) return null;
+    const title = lc.title[lang];
+    const rawText = lc.rawText[lang];
+    const tooltips: Record<number, string> = {};
+    for (const [k, v] of Object.entries(lc.tooltips)) {
+      tooltips[Number(k)] = v[lang];
+    }
+    const segments = this.parser.parseMarkedText(rawText, tooltips);
+    return { title, segments };
+  });
 }

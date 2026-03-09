@@ -9,9 +9,10 @@ import { LanguageService, type Language } from '../../../../core/services/langua
       @for (lang of languages; track lang) {
         <button
           class="lang-btn"
-          [class.active]="!disabled && currentLang() === lang"
-          [disabled]="disabled"
-          (click)="!disabled && setLang(lang)"
+          [class.active]="isActive(lang)"
+          [class.opaque]="isOpaque(lang)"
+          [disabled]="disabled || fixedLanguage !== null"
+          (click)="!disabled && !fixedLanguage && setLang(lang)"
         >
           {{ labels[lang] }}
         </button>
@@ -41,12 +42,16 @@ import { LanguageService, type Language } from '../../../../core/services/langua
       color: var(--color-paper);
       border-color: var(--color-ink);
     }
-    .lang-btn:disabled { cursor: default; opacity: 0.7; }
+    .lang-btn.opaque {
+      opacity: 0.5;
+    }
   `]
 })
 export class LanguageToggleComponent {
   private langService = inject(LanguageService);
   @Input() disabled = false;
+  /** When set, shows this language as active and others as opaque (e.g. second tab) */
+  @Input() fixedLanguage: Language | null = null;
 
   languages: Language[] = ['es', 'fr', 'en'];
   labels: Record<Language, string> = {
@@ -56,6 +61,15 @@ export class LanguageToggleComponent {
   };
 
   currentLang = this.langService.language;
+
+  isActive(lang: Language): boolean {
+    if (this.fixedLanguage) return lang === this.fixedLanguage;
+    return !this.disabled && this.currentLang() === lang;
+  }
+
+  isOpaque(lang: Language): boolean {
+    return this.fixedLanguage !== null && lang !== this.fixedLanguage;
+  }
 
   setLang(lang: Language): void {
     this.langService.setLanguage(lang);

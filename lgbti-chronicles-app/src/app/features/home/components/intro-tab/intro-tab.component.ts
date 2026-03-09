@@ -58,6 +58,7 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
     .cards-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
       gap: var(--space-md);
       margin-bottom: var(--space-xl);
     }

@@ -9,7 +9,7 @@ import { LanguageToggleComponent } from '../language-toggle/language-toggle.comp
   template: `
     <div class="second-tab">
       <div class="tab-header">
-        <app-language-toggle [disabled]="true" />
+        <app-language-toggle [fixedLanguage]="'es'" />
       </div>
       <p class="tab-text">{{ tabText }}</p>
     </div>
