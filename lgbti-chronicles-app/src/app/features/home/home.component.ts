@@ -5,12 +5,18 @@ import { PAGE_CONFIG } from '../../core/data/content.data';
 import { IntroTabComponent } from './components/intro-tab/intro-tab.component';
 import { SecondTabComponent } from './components/second-tab/second-tab.component';
 
+const BACKGROUND_IMAGES = {
+  intro: 'images/background_1.jpg',
+  second: 'images/background_2.jpg',
+  card: 'images/background_3.jpg'
+};
+
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [IntroTabComponent, SecondTabComponent],
   template: `
-    <div class="home">
+    <div class="home" [style.backgroundImage]="backgroundImage()">
       <header class="header">
         <h1>{{ title() }}</h1>
       </header>
@@ -33,7 +39,10 @@ import { SecondTabComponent } from './components/second-tab/second-tab.component
         </div>
         <div class="tab-content">
           @if (activeTab() === 'intro') {
-            <app-intro-tab />
+            <app-intro-tab
+              [selectedCardId]="selectedCardId()"
+              (cardSelect)="onCardSelect($event)"
+            />
           } @else {
             <app-second-tab />
           }
@@ -42,7 +51,24 @@ import { SecondTabComponent } from './components/second-tab/second-tab.component
     </div>
   `,
   styles: [`
-    .home { min-height: 100vh; }
+    .home {
+      min-height: 100vh;
+      background-color: var(--color-paper);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      transition: background-image 0.4s ease;
+    }
+    .home::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(248,244,239,0.75) 0%, rgba(248,244,239,0.9) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .home > * { position: relative; z-index: 1; }
     .header {
       padding: var(--space-lg) var(--space-xl);
       border-bottom: 1px solid var(--color-border);
@@ -92,9 +118,18 @@ export class HomeComponent {
   private langService = inject(LanguageService);
   private titleService = inject(Title);
   activeTab = signal<'intro' | 'second'>('intro');
+  selectedCardId = signal<number | null>(null);
   title = computed(() => PAGE_CONFIG.title[this.langService.language()]);
   tabIntroLabel = computed(() => PAGE_CONFIG.tabs.intro[this.langService.language()]);
   tabSecondLabel = computed(() => PAGE_CONFIG.tabs.second[this.langService.language()]);
+
+  backgroundImage = computed(() => {
+    const tab = this.activeTab();
+    const cardId = this.selectedCardId();
+    if (tab === 'second') return `url(${BACKGROUND_IMAGES.second})`;
+    if (tab === 'intro' && cardId !== null) return `url(${BACKGROUND_IMAGES.card})`;
+    return `url(${BACKGROUND_IMAGES.intro})`;
+  });
 
   constructor() {
     effect(() => {
@@ -104,5 +139,10 @@ export class HomeComponent {
 
   setTab(tab: 'intro' | 'second'): void {
     this.activeTab.set(tab);
+    if (tab === 'second') this.selectedCardId.set(null);
+  }
+
+  onCardSelect(cardId: number | null): void {
+    this.selectedCardId.set(cardId);
   }
 }

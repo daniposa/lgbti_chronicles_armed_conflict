@@ -1,6 +1,16 @@
 # lgbti_chronicles_armed_conflict
 web application for publishing the translations to french and english of the chronicles narrated by the LGTBI+ community about their experiences in the armed conflict in Colombia
 
+## Background images
+
+Add these JPG files to the `./images/` folder for the dynamic background:
+
+- `background_1.jpg` – Introduction tab (default)
+- `background_2.jpg` – Second tab
+- `background_3.jpg` – When any card is selected
+
+Recommended: 1920×1080 px, under 300 KB each.
+
 ## Deployment (GitHub Pages)
 
 ### Option 1: GitHub Actions (recommended)

@@ -1,4 +1,4 @@
-import { Component, signal, computed, inject } from '@angular/core';
+import { Component, computed, inject, input, output } from '@angular/core';
 import { LanguageService } from '../../../../core/services/language.service';
 import { INTRO_TEXT, CARDS_DATA } from '../../../../core/data/content.data';
 import { LanguageToggleComponent } from '../language-toggle/language-toggle.component';
@@ -22,7 +22,7 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
               [card]="card"
               [lang]="currentLang()"
               [selected]="selectedCardId() === card.id"
-              (select)="selectCard(card.id)"
+              (select)="cardSelect.emit(selectedCardId() === card.id ? null : card.id)"
             />
           }
         </div>
@@ -81,7 +81,9 @@ export class IntroTabComponent {
   private langService = inject(LanguageService);
   cards = CARDS_DATA;
   currentLang = this.langService.language;
-  selectedCardId = signal<number | null>(null);
+  selectedCardId = input.required<number | null>();
+
+  cardSelect = output<number | null>();
 
   introText = computed(() => {
     const lang = this.langService.language();
@@ -92,9 +94,5 @@ export class IntroTabComponent {
     const id = this.selectedCardId();
     return id ? CARDS_DATA.find(c => c.id === id) ?? null : null;
   });
-
-  selectCard(id: number): void {
-    this.selectedCardId.set(this.selectedCardId() === id ? null : id);
-  }
 }
 
