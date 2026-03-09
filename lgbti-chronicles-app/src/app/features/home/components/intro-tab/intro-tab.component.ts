@@ -3,12 +3,11 @@ import { LanguageService } from '../../../../core/services/language.service';
 import { INTRO_TEXT, CARDS_DATA } from '../../../../core/data/content.data';
 import { LanguageToggleComponent } from '../language-toggle/language-toggle.component';
 import { CardComponent } from '../card/card.component';
-import { InteractiveImageComponent } from '../interactive-image/interactive-image.component';
 
 @Component({
   selector: 'app-intro-tab',
   standalone: true,
-  imports: [LanguageToggleComponent, CardComponent, InteractiveImageComponent],
+  imports: [LanguageToggleComponent, CardComponent],
   template: `
     <div class="intro-tab">
       <div class="intro-header">
@@ -26,11 +25,6 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
             />
           }
         </div>
-        @if (selectedCard()) {
-          <div class="image-wrapper">
-            <app-interactive-image [card]="selectedCard()" />
-          </div>
-        }
       </div>
     </div>
   `,
@@ -66,14 +60,6 @@ import { InteractiveImageComponent } from '../interactive-image/interactive-imag
       .cards-row {
         grid-template-columns: 1fr;
       }
-    }
-    .image-wrapper {
-      margin-top: var(--space-xl);
-      padding: var(--space-md);
-      background: var(--color-paper-warm);
-      border-radius: 4px;
-      border: 1px solid var(--color-border-soft);
-      box-shadow: var(--shadow-soft);
     }
   `]
 })

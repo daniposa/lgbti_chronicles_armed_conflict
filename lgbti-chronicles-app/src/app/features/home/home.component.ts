@@ -4,6 +4,8 @@ import { LanguageService } from '../../core/services/language.service';
 import { PAGE_CONFIG } from '../../core/data/content.data';
 import { IntroTabComponent } from './components/intro-tab/intro-tab.component';
 import { SecondTabComponent } from './components/second-tab/second-tab.component';
+import { InteractiveImageComponent } from './components/interactive-image/interactive-image.component';
+import { CARDS_DATA } from '../../core/data/content.data';
 
 const BACKGROUND_IMAGES = {
   intro: 'images/background_1.jpg',
@@ -14,7 +16,7 @@ const BACKGROUND_IMAGES = {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [IntroTabComponent, SecondTabComponent],
+  imports: [IntroTabComponent, SecondTabComponent, InteractiveImageComponent],
   template: `
     <div class="home" [style.backgroundImage]="backgroundImage()">
       <header class="header">
@@ -48,6 +50,14 @@ const BACKGROUND_IMAGES = {
           }
         </div>
       </div>
+      @if (activeTab() === 'intro' && selectedCard()) {
+        <div class="image-wrapper-fullscreen">
+          <button class="close-fullscreen" (click)="onCardSelect(null)" aria-label="Close">
+            &times;
+          </button>
+          <app-interactive-image [card]="selectedCard()" />
+        </div>
+      }
     </div>
   `,
   styles: [`
@@ -112,6 +122,38 @@ const BACKGROUND_IMAGES = {
       font-weight: 500;
     }
     .tab-content { margin-top: var(--space-xl); }
+    .image-wrapper-fullscreen {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-paper-warm);
+    }
+    .close-fullscreen {
+      position: absolute;
+      top: var(--space-md);
+      right: var(--space-md);
+      z-index: 11;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .close-fullscreen:hover {
+      background: rgba(0,0,0,0.7);
+    }
   `]
 })
 export class HomeComponent {
@@ -141,6 +183,11 @@ export class HomeComponent {
     this.activeTab.set(tab);
     if (tab === 'second') this.selectedCardId.set(null);
   }
+
+  selectedCard = computed(() => {
+    const id = this.selectedCardId();
+    return id ? CARDS_DATA.find(c => c.id === id) ?? null : null;
+  });
 
   onCardSelect(cardId: number | null): void {
     this.selectedCardId.set(cardId);

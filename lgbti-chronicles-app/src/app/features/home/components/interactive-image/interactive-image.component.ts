@@ -27,15 +27,18 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
   styles: [`
     .image-container {
       position: relative;
-      display: inline-block;
-      max-width: 100%;
-      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
     }
     .image-container img {
       display: block;
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .hotspot {
       position: absolute;
