@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh-pages": "ng build --configuration=github-pages",
+    "deploy": "npm run build:gh-pages && npm run deploy:gh-pages",
+    "deploy:gh-pages": "node scripts/deploy-gh-pages.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -27,6 +30,7 @@
     "jsdom": "^28.0.0",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "gh-pages": "^6.3.0"
   }
 }

@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: lgbti-chronicles-app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: lgbti-chronicles-app
+        run: npm ci
+
+      - name: Build
+        working-directory: lgbti-chronicles-app
+        run: npm run build:gh-pages
+
+      - name: Create 404.html for SPA routing
+        run: cp lgbti-chronicles-app/dist/lgbti-chronicles-app/browser/index.html lgbti-chronicles-app/dist/lgbti-chronicles-app/browser/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: lgbti-chronicles-app/dist/lgbti-chronicles-app/browser
+
+  deploy:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
