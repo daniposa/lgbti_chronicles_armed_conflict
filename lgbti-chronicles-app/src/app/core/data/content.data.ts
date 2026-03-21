@@ -54,7 +54,7 @@ function createLocalizedModalContent(
 const modalContent1: LocalizedModalContent = createLocalizedModalContent(
   { es: 'Crónica I', fr: 'Chronique I', en: 'Chronicle I' },
   {
-    es: 'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    es: 'prueba crónica 1 Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     fr: 'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     en: 'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
