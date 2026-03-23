@@ -7,9 +7,9 @@ import type { LocalizedContent, LocalizedModalContent, CardData } from '../model
 export const PAGE_CONFIG = {
   /** Main page title (header and browser tab) */
   title: {
-    es: 'Crónicas LGTBI del Conflicto Armado',
-    fr: 'Chroniques LGTBI du Conflit Armé',
-    en: 'LGTBI Chronicles of the Armed Conflict'
+    es: 'Amplificar la voz de las víctimas para la no-repetición',
+    fr: 'Amplifier la voix des victimes pour éviter la répétition',
+    en: 'Amplifying the voices of victims to avoid repetition'
   } satisfies LocalizedContent,
   /** Tab labels */
   tabs: {
@@ -56,18 +56,18 @@ const modalContent1: LocalizedModalContent = createLocalizedModalContent(
   {
     es: 'prueba crónica 1 Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     fr: 'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    en: 'Lorem ipsum dolor sit amet, {1}consectetur adipiscing elit{/1}. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, {2}quis nostrud exercitation{/2} ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    en: 'The Commission learned that, in Los Montes de María, many gay men and trans women were victims of cruel, inhumane, and degrading acts committed by paramilitary and police men during the 2000’s. In some cases, these acts included physical and psychological torture, such as those suffered by Soraida, a trans female victim of the {1}FARC-EP{/1}between 2004 and 2005, in the town of Arauquita, Arauca: \n\n“When I lifted my head up, I felt the kick that broke me. I didn’t look up but I felt someone hitting me, so I grabbed onto the fence. When I saw blood pouring out, I tried to stop the bleeding and got out. I grabbed the T-shirt I had left outside and put it on the wound to stop the bleeding. The guerrilla member started insulting me and calling me names. He hit me in the face like twice and told me he was gonna kill me. I started to cry. He said no “faggots” or {2}“GAYtorades”{/2} were allowed there because we would corrupt the other kids… Back then, my hair wasn’t that long, but he grabbed me by the hair anyways and kept punching me in the face. Then, he said: ´Well, since you want to be a woman, I’ll do to you what we do to women´ He grabbed my hands and raped me. Up until the end, he kept hitting me and saying stuff, pointed at me with a gun and yelling, ‘I’ll kill you’. He then took out a blade and made a cut in my rectum. I was 10 years old.” Trans woman, student, activist.'
   },
   {
     1: {
       es: 'Frase que describe el primer concepto destacado en la crónica.',
       fr: 'Phrase décrivant le premier concept mis en évidence dans la chronique.',
-      en: 'Phrase describing the first highlighted concept in the chronicle.'
+      en: 'FARC-EP (Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo) are an insurgent politic-military organization that has existed for over 50 years in Colombia. '
     },
     2: {
       es: 'Frase que describe el segundo concepto destacado con contexto adicional.',
       fr: 'Phrase décrivant le deuxième concept mis en évidence avec un contexte supplémentaire.',
-      en: 'Phrase describing the second highlighted concept with additional context.'
+      en: 'A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult. '
     }
   }
 );
