@@ -18,6 +18,11 @@ export const PAGE_CONFIG = {
       fr: 'Introduction',
       en: 'Introduction'
     } satisfies LocalizedContent,
+    chronicles: {
+      es: 'Crónicas',
+      fr: 'Chroniques',
+      en: 'Chronicles'
+    } satisfies LocalizedContent,
     second: {
       es: 'Comentarios de la traducción',
       fr: 'Commentaires de la traduction',

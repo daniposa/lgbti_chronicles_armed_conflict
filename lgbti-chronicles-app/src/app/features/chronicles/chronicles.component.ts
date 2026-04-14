@@ -6,6 +6,8 @@ import { INTRO_TEXT, CARDS_DATA, PAGE_CONFIG } from '../../core/data/content.dat
 import { CardComponent } from '../home/components/card/card.component';
 import { InteractiveImageComponent } from '../home/components/interactive-image/interactive-image.component';
 
+type Tab = 'intro' | 'chronicles';
+
 @Component({
   selector: 'app-chronicles',
   standalone: true,
@@ -19,9 +21,27 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
         <h1 class="page-title">{{ pageTitle }}</h1>
       </header>
 
+      <nav class="tab-nav">
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'intro'"
+          (click)="setTab('intro')"
+        >
+          {{ introTabLabel }}
+        </button>
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'chronicles'"
+          (click)="setTab('chronicles')"
+        >
+          {{ chroniclesTabLabel }}
+        </button>
+      </nav>
+
       <main class="page-main">
-        <p class="intro-text">{{ introText }}</p>
-        <div class="cards-section">
+        @if (activeTab() === 'intro') {
+          <p class="intro-text">{{ introText }}</p>
+        } @else {
           <div class="cards-row">
             @for (card of cards; track card.id) {
               <app-card
@@ -32,7 +52,7 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
               />
             }
           </div>
-        </div>
+        }
       </main>
 
       @if (selectedCard()) {
@@ -96,6 +116,36 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
       color: var(--color-ink);
       letter-spacing: 0.02em;
     }
+    .tab-nav {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      background: rgba(245, 240, 232, 0.85);
+      border-bottom: 1px solid var(--color-border);
+      padding: 0 var(--space-xl);
+      gap: 0;
+    }
+    .tab-btn {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--color-ink-muted);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: var(--space-md) var(--space-lg);
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: -1px;
+    }
+    .tab-btn:hover {
+      color: var(--color-ink);
+    }
+    .tab-btn.active {
+      color: var(--color-ink);
+      border-bottom-color: var(--color-accent);
+    }
     .page-main {
       position: relative;
       z-index: 1;
@@ -108,7 +158,6 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
       line-height: 1.85;
       max-width: var(--reading-width);
       color: var(--color-ink);
-      margin-bottom: var(--space-2xl);
     }
     .intro-text::first-letter {
       font-family: var(--font-display);
@@ -127,6 +176,7 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
     }
     @media (max-width: 768px) {
       .cards-row { grid-template-columns: 1fr; }
+      .tab-nav { padding: 0 var(--space-sm); }
     }
     .image-fullscreen {
       position: fixed;
@@ -170,7 +220,10 @@ export class ChroniclesComponent implements OnInit {
   cards = CARDS_DATA;
   introText = '';
   pageTitle = '';
+  introTabLabel = '';
+  chroniclesTabLabel = '';
 
+  activeTab = signal<Tab>('intro');
   selectedCardId = signal<number | null>(null);
 
   selectedCard = computed(() => {
@@ -190,7 +243,16 @@ export class ChroniclesComponent implements OnInit {
     this.langService.setLanguage(this.lang);
     this.introText = INTRO_TEXT[this.lang];
     this.pageTitle = PAGE_CONFIG.title[this.lang];
+    this.introTabLabel = PAGE_CONFIG.tabs.intro[this.lang];
+    this.chroniclesTabLabel = PAGE_CONFIG.tabs.chronicles[this.lang];
     this.titleService.setTitle(this.pageTitle);
+  }
+
+  setTab(tab: Tab): void {
+    this.activeTab.set(tab);
+    if (tab === 'intro') {
+      this.selectedCardId.set(null);
+    }
   }
 
   selectCard(id: number): void {
