@@ -4,6 +4,9 @@ import type { LocalizedContent, LocalizedModalContent, CardData } from '../model
  * Page configuration - edit these values to customize the page title and tab labels.
  * All titles support Spanish (es), French (fr), and English (en).
  */
+/** Path to the panoramic image shown behind the cards in the Chronicles tab. */
+export const PANORAMA_IMAGE = 'images/Moodboards/central-park-panorama-manhattan.jpg';
+
 export const PAGE_CONFIG = {
   /** Main page title (header and browser tab) */
   title: {
