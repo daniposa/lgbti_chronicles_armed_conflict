@@ -15,6 +15,11 @@ export interface ModalContent {
 export interface LocalizedModalContent {
   title: LocalizedContent;
   rawText: LocalizedContent;
+  /**
+   * Tooltip HTML for each highlight marker id. Use a small HTML fragment: `<p>`, `<br>`,
+   * `<strong>`, `<a href="https://…" target="_blank" rel="noopener noreferrer">`,
+   * `<img src="images/…" alt="…" width="…">` (paths under `images/` work at runtime).
+   */
   tooltips: Record<number, LocalizedContent>;
 }
 

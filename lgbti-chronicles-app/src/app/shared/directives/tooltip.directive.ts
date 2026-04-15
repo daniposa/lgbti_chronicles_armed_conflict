@@ -4,12 +4,21 @@ import {
   HostListener,
   Input,
   OnDestroy,
-  OnInit
+  OnInit,
+  SecurityContext,
+  inject
 } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 /**
  * Highlights: hover shows a transient tooltip; click pins an explainer panel
  * (selectable text + close). Only one pinned panel at a time across the app.
+ *
+ * Tooltip strings may contain a **trusted HTML fragment** (see `content.data.ts`):
+ * paragraphs, links (`<a href="https://..." target="_blank" rel="noopener noreferrer">`),
+ * images (`<img src="images/..." alt="...">`), `<br>`, `<strong>`, etc.
+ * HTML is passed through `DomSanitizer.sanitize(HTML, …)` so links/images work when safe.
+ * Author fragments only in `content.data.ts` (trusted), not from user input.
  */
 @Directive({
   selector: '[appTooltip]',
@@ -25,6 +34,8 @@ export class TooltipDirective implements OnInit, OnDestroy {
   private readonly boundReposition = (): void => {
     this.positionTooltip();
   };
+
+  private readonly sanitizer = inject(DomSanitizer);
 
   constructor(private el: ElementRef<HTMLElement>) {}
 
@@ -85,7 +96,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
     this.removeTooltip();
     this.tooltipEl = document.createElement('div');
     this.tooltipEl.className = 'app-tooltip app-tooltip--ephemeral';
-    this.tooltipEl.textContent = this.appTooltip;
+    this.setTooltipInnerHtml(this.tooltipEl, this.appTooltip);
     this.tooltipEl.style.cssText = `
       position: fixed;
       z-index: 10000;
@@ -120,7 +131,7 @@ export class TooltipDirective implements OnInit, OnDestroy {
 
     const body = document.createElement('div');
     body.className = 'app-tooltip-body';
-    body.textContent = this.appTooltip;
+    this.setTooltipInnerHtml(body, this.appTooltip);
 
     root.appendChild(closeBtn);
     root.appendChild(body);
@@ -143,6 +154,14 @@ export class TooltipDirective implements OnInit, OnDestroy {
       this.tooltipEl.parentNode.removeChild(this.tooltipEl);
     }
     this.tooltipEl = null;
+  }
+
+  /**
+   * Renders tooltip HTML. Strings must come from trusted static data (`content.data.ts`),
+   * not from end users — `sanitize` still strips `javascript:` etc.
+   */
+  private setTooltipInnerHtml(el: HTMLElement, html: string): void {
+    el.innerHTML = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
   }
 
   private positionTooltip(): void {

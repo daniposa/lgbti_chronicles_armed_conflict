@@ -106,3 +106,33 @@ body {
 .app-tooltip-close:hover {
   background: rgba(248, 244, 239, 0.28);
 }
+
+/* Rich tooltip HTML (from content.data.ts) */
+.app-tooltip p {
+  margin: 0 0 0.5rem 0;
+}
+.app-tooltip p:last-child {
+  margin-bottom: 0;
+}
+.app-tooltip a {
+  color: #e8d4a8 !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.app-tooltip a:hover {
+  color: #fff !important;
+}
+.app-tooltip img,
+.app-tooltip--pinned .app-tooltip-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.4rem 0;
+  border-radius: 4px;
+}
+.app-tooltip code {
+  font-size: 0.8em;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.1em 0.25em;
+  border-radius: 3px;
+}

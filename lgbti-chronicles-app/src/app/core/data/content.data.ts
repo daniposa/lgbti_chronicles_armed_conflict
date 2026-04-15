@@ -77,6 +77,20 @@ export const INTRO_TEXT: LocalizedContent = {
 
 export const TAB2_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
+/*
+ * ── Tooltips (highlight explanations) ─────────────────────────────────────────
+ * Each string under `tooltips` is a small HTML fragment (not plain text only).
+ * Allowed examples you can copy/adapt (Angular sanitizes unsafe URLs/scripts):
+ *
+ *   Paragraphs:     <p>Texto con <strong>énfasis</strong>.</p>
+ *   Line break:     Primera línea.<br>Segunda línea.
+ *   External link:  <a href="https://example.org" target="_blank" rel="noopener noreferrer">Etiqueta</a>
+ *   Local image:    <img src="images/nombre.jpg" alt="Descripción" width="200">
+ *
+ * Use width (or height) on images; inline `style=` is stripped by the sanitizer.
+ * Paths are relative to the site root (same as `angular.json` assets → `/images/...`).
+ */
+
 function createLocalizedModalContent(
   title: LocalizedContent,
   rawText: LocalizedContent,
@@ -94,14 +108,26 @@ const modalContent1: LocalizedModalContent = createLocalizedModalContent(
   },
   {
     1: {
-      es: 'Frase que describe el primer concepto destacado en la crónica.',
-      fr: 'Phrase décrivant le premier concept mis en évidence dans la chronique.',
-      en: 'FARC-EP (Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo) are an insurgent politic-military organization that has existed for over 50 years in Colombia. '
+      es: `<p><strong>FARC-EP</strong> — Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo.</p>
+<p>Organización político-militar. Más contexto (enlace externo): <a href="https://www.un.org/es" target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
+<p><strong>Ejemplo de imagen</strong> en tooltip (ruta bajo <code>images/</code>):</p>
+<p><img src="images/image4.jpg" alt="Ilustración de ejemplo" width="200"></p>`,
+      fr: `<p><strong>FARC-EP</strong> — Forces armées révolutionnaires de Colombie – Armée du peuple.</p>
+<p>Lien externe d’exemple : <a href="https://www.un.org/fr" target="_blank" rel="noopener noreferrer">Site de l’ONU</a>.</p>
+<p>Image locale :</p>
+<p><img src="images/image5.jpg" alt="Exemple visuel" width="200"></p>`,
+      en: `<p><strong>FARC-EP</strong> (Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo) are an insurgent politic-military organization that has existed for over 50 years in Colombia. ''FARC-EP (Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo) are an insurgent politic-military organization that has existed for over 50 years in Colombia. </p>
+<p>External link example: <a href="https://www.un.org/en" target="_blank" rel="noopener noreferrer">United Nations</a>.</p>
+<p>Local asset example:</p>
+<p><img src="images/image6.jpg" alt="Sample image in tooltip" width="200"></p>`
     },
     2: {
-      es: 'Frase que describe el segundo concepto destacado con contexto adicional.',
-      fr: 'Phrase décrivant le deuxième concept mis en évidence avec un contexte supplémentaire.',
-      en: 'A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult. '
+      es: `<p>Juego de palabras entre «gay» y la bebida «Gatorade». Referencia: <a href="https://es.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Gatorade en Wikipedia</a>.</p>
+<p><img src="images/image1.jpg" alt="Miniatura" width="160"></p>`,
+      fr: `<p>Jeu de mots entre « gay » et la boisson « Gatorade ». <a href="https://fr.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Article Wikipédia</a>.</p>
+<p><img src="images/image2.jpg" alt="Vignette" width="160"></p>`,
+      en: `<p>A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult <a href="https://en.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Wikipedia</a>. </p>
+<p><img src="images/image3.jpg" alt="Thumbnail" width="160"></p>`
     }
   }
 );
@@ -115,14 +141,20 @@ const modalContent2: LocalizedModalContent = createLocalizedModalContent(
   },
   {
     1: {
-      es: 'Tooltip descriptivo para la primera frase destacada.',
-      fr: 'Info-bulle descriptive pour la première phrase mise en évidence.',
-      en: 'Descriptive tooltip for the first highlighted phrase.'
+      es: `<p>Primera frase destacada — solo enlace:</p>
+<p><a href="https://www.colombia.co" target="_blank" rel="noopener noreferrer">Colombia.co</a></p>`,
+      fr: `<p>Première phrase — lien externe :</p>
+<p><a href="https://www.diplomatie.gouv.fr" target="_blank" rel="noopener noreferrer">Diplomatie.gouv.fr</a></p>`,
+      en: `<p>First highlight — external link only:</p>
+<p><a href="https://www.gov.uk" target="_blank" rel="noopener noreferrer">GOV.UK</a></p>`
     },
     2: {
-      es: 'Tooltip descriptivo para la segunda frase destacada.',
-      fr: 'Info-bulle descriptive pour la deuxième phrase mise en évidence.',
-      en: 'Descriptive tooltip for the second highlighted phrase.'
+      es: `<p>Segunda frase — solo imagen:</p>
+<p><img src="images/image2.jpg" alt="Ejemplo" width="220"></p>`,
+      fr: `<p>Deuxième phrase — image :</p>
+<p><img src="images/image3.jpg" alt="Exemple" width="220"></p>`,
+      en: `<p>Second highlight — image only:</p>
+<p><img src="images/image4.jpg" alt="Example" width="220"></p>`
     }
   }
 );
@@ -136,14 +168,23 @@ const modalContent3: LocalizedModalContent = createLocalizedModalContent(
   },
   {
     1: {
-      es: 'Un mensaje descriptivo breve para este término.',
-      fr: 'Un message descriptif bref pour ce terme.',
-      en: 'A brief descriptive message for this term.'
+      es: `<p>Término breve con <strong>texto</strong> y enlace.</p>
+<p>Más: <a href="https://www.humanrights.gov" target="_blank" rel="noopener noreferrer">Derechos humanos (ejemplo)</a>.</p>`,
+      fr: `<p>Terme court avec <strong>texte</strong> et lien.</p>
+<p><a href="https://www.un.org/fr/human-rights" target="_blank" rel="noopener noreferrer">Droits humains (exemple)</a>.</p>`,
+      en: `<p>Brief term with <strong>text</strong> and a link.</p>
+<p><a href="https://www.un.org/en/human-rights" target="_blank" rel="noopener noreferrer">Human rights (example)</a>.</p>`
     },
     2: {
-      es: 'Otro tooltip descriptivo para contexto.',
-      fr: 'Une autre info-bulle descriptive pour le contexte.',
-      en: 'Another descriptive tooltip for context.'
+      es: `<p>Texto + imagen + enlace en un solo tooltip:</p>
+<p><img src="images/image5.jpg" alt="Contexto visual" width="180"></p>
+<p>Fuente: <a href="https://www.ohchr.org/es" target="_blank" rel="noopener noreferrer">ACNUDH</a>.</p>`,
+      fr: `<p>Texte + image + lien :</p>
+<p><img src="images/image6.jpg" alt="Visuel" width="180"></p>
+<p><a href="https://www.ohchr.org/fr" target="_blank" rel="noopener noreferrer">ONU Droits humains</a>.</p>`,
+      en: `<p>Text + image + link together:</p>
+<p><img src="images/image1.jpg" alt="Visual context" width="180"></p>
+<p>Source: <a href="https://www.ohchr.org/en" target="_blank" rel="noopener noreferrer">OHCHR</a>.</p>`
     }
   }
 );
