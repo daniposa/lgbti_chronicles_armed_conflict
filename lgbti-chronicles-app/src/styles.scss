@@ -69,3 +69,40 @@ body {
   line-height: 1.5 !important;
   box-shadow: var(--shadow-modal) !important;
 }
+
+/* Pinned explainer (after click): selectable text + close */
+.app-tooltip--pinned {
+  padding: 2rem 0.75rem 0.65rem 0.75rem !important;
+  max-width: min(320px, calc(100vw - 24px)) !important;
+}
+
+.app-tooltip--pinned .app-tooltip-body {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  cursor: text;
+}
+
+.app-tooltip-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  background: rgba(248, 244, 239, 0.15);
+  color: var(--color-paper);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+}
+
+.app-tooltip-close:hover {
+  background: rgba(248, 244, 239, 0.28);
+}
