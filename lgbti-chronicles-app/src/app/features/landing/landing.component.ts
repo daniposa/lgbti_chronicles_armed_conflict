@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { PAGE_CONFIG } from '../../core/data/content.data';
+import { PAGE_CONFIG, LANDING_CREDITS } from '../../core/data/content.data';
 
 @Component({
   selector: 'app-landing',
@@ -25,6 +25,18 @@ import { PAGE_CONFIG } from '../../core/data/content.data';
             <span class="btn-sub">Notas de traducción</span>
           </a>
         </div>
+
+        <footer class="credits" aria-label="Créditos">
+          <h2 class="credits-title">{{ credits.sectionTitle }}</h2>
+          <ul class="credits-list">
+            @for (line of credits.lines; track $index) {
+              <li class="credits-line">
+                <span class="credits-label">{{ line.label }}:</span>
+                <span class="credits-names">{{ line.names }}</span>
+              </li>
+            }
+          </ul>
+        </footer>
       </div>
     </div>
   `,
@@ -110,8 +122,43 @@ import { PAGE_CONFIG } from '../../core/data/content.data';
       font-size: 1.4rem;
       color: var(--color-ink-muted);
     }
+    .credits {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border-soft);
+      text-align: left;
+    }
+    .credits-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-ink-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 var(--space-md) 0;
+      text-align: center;
+    }
+    .credits-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .credits-line {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--color-ink-muted);
+      margin-bottom: var(--space-sm);
+    }
+    .credits-line:last-child { margin-bottom: 0; }
+    .credits-label {
+      color: var(--color-ink);
+      font-weight: 500;
+    }
+    .credits-names { font-style: italic; }
   `]
 })
 export class LandingComponent {
   title = PAGE_CONFIG.title.es;
+  credits = LANDING_CREDITS;
 }

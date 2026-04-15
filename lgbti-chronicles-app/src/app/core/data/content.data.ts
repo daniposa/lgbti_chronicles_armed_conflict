@@ -1,4 +1,4 @@
-import type { LocalizedContent, LocalizedModalContent, CardData } from '../models/content.model';
+import type { LocalizedContent, LocalizedModalContent, CardData, LandingCredits } from '../models/content.model';
 
 /**
  * Page configuration - edit these values to customize the page title and tab labels.
@@ -32,6 +32,32 @@ export const PAGE_CONFIG = {
       en: 'Translation Comments'
     } satisfies LocalizedContent
   }
+};
+
+/**
+ * Credits on the landing page (below the three buttons).
+ * Edit `sectionTitle` and `lines` to match your project.
+ */
+export const LANDING_CREDITS: LandingCredits = {
+  sectionTitle: 'Créditos',
+  lines: [
+    {
+      label: 'Traductoras / Translators',
+      names: 'Juan Pérez Gil, María García López'
+    },
+    {
+      label: 'Revisión editorial / Editorial review',
+      names: 'Ana Rodríguez Martínez'
+    },
+    {
+      label: 'Diseño y desarrollo / Design & development',
+      names: 'Equipo de publicación digital'
+    },
+    {
+      label: 'Agradecimientos / Acknowledgements',
+      names: 'Comunidad LGTBI+ que compartió estas crónicas'
+    }
+  ]
 };
 
 /** @deprecated Use PAGE_CONFIG.title instead */

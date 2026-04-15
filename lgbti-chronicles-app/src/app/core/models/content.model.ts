@@ -34,3 +34,15 @@ export interface CardData {
   imagePath: string;
   hotspots: Hotspot[];
 }
+
+/** One line on the landing page credits block (role + names). */
+export interface CreditLine {
+  label: string;
+  names: string;
+}
+
+/** Credits shown on the home (landing) page below the main buttons. */
+export interface LandingCredits {
+  sectionTitle: string;
+  lines: CreditLine[];
+}
