@@ -198,7 +198,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       en: 'English: Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
-    imagePath: 'images/image1.jpg',
+    imagePath: 'images/paisajes/que paso.webp',
     hotspots: [
       { id: 'h1', x: 10, y: 15, width: 25, height: 20, modalContent: modalContent1 },
       { id: 'h2', x: 50, y: 40, width: 30, height: 25, modalContent: modalContent2 },
@@ -213,7 +213,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Sed do eiusmod tempor incididunt ut labore et dolore.',
       en: 'English: Sed do eiusmod tempor incididunt ut labore et dolore.'
     },
-    imagePath: 'images/image2.jpg',
+    imagePath: 'images/paisajes/que paso.webp',
     hotspots: [
       { id: 'h1', x: 20, y: 25, width: 20, height: 18, modalContent: modalContent2 },
       { id: 'h2', x: 60, y: 55, width: 25, height: 22, modalContent: modalContent3 },
@@ -228,7 +228,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Ut enim ad minim veniam, quis nostrud exercitation.',
       en: 'English: Ut enim ad minim veniam, quis nostrud exercitation.'
     },
-    imagePath: 'images/image3.jpg',
+    imagePath: 'images/paisajes/que paso.webp',
     hotspots: [
       { id: 'h1', x: 35, y: 10, width: 30, height: 25, modalContent: modalContent3 },
       { id: 'h2', x: 5, y: 50, width: 28, height: 20, modalContent: modalContent1 },
