@@ -5,7 +5,7 @@ import type { LocalizedContent, LocalizedModalContent, CardData, LandingCredits 
  * All titles support Spanish (es), French (fr), and English (en).
  */
 /** Path to the panoramic image shown behind the cards in the Chronicles tab. */
-export const PANORAMA_IMAGE = 'images/Moodboards/central-park-panorama-manhattan.jpg';
+export const PANORAMA_IMAGE = 'images/paisajes/0.webp';
 
 export const PAGE_CONFIG = {
   /** Main page title (header and browser tab) */
