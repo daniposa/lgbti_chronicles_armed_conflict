@@ -82,5 +82,5 @@ export const CHRONICLES_T3: LocalizedModalContent[] = [
   CHRONICLE_T3_38,
   CHRONICLE_T3_39,
   CHRONICLE_T3_40,
-  CHRONICLE_T3_41
+  CHRONICLE_T3_41,
 ];

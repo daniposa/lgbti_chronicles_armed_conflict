@@ -21,7 +21,7 @@ export interface GridHotspotOptions {
  */
 export function buildGridHotspots(
   chronicles: LocalizedModalContent[],
-  opts: GridHotspotOptions
+  opts: GridHotspotOptions,
 ): Hotspot[] {
   const count = chronicles.length;
   if (count === 0) return [];
@@ -51,7 +51,7 @@ export function buildGridHotspots(
       y: Math.round(y * 100) / 100,
       width: hotspotWidth,
       height: hotspotHeight,
-      modalContent
+      modalContent,
     };
   });
 }
