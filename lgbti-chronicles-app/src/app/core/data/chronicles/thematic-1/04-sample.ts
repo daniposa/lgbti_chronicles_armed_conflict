@@ -2,24 +2,49 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_04: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-04 (muestra)',
-    fr: 'Chronique T1-04 (échantillon)',
-    en: 'Chronicle T1-04 (sample)',
+    es: 'Angie',
+    fr: 'Angie',
+    en: 'Angie',
   },
   rawText: {
     es: 'Texto de muestra para la crónica T1-04. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-04. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-04. {1}Highlighted phrase{/1} with an example tooltip.',
+    fr: '<p>Près de Chigorodó se trouve la <i><b><u>{1}vereda{/1}</u></b></i> de Tascón, dans la commune de Dabeiba. Là, plusieurs membres du 5e front des <u><b>{2}FARC-EP{/2}</b></u>, dont un oncle de la victime, ont agressé Angie, une femme lesbienne qui a été victime de viols, de menaces et de tortures entre 1991 et 1994, alors qu’elle n’avait que 12 ans : « Ça m’est arrivé à plusieurs reprises dans plein de veredas différentes. Je suis tombée enceinte d’un membre des FARC, un certain Juan Carlos, qui appartenait au même front dont faisait aussi partie celle connue sous le nom de Karina. C’est pour ça que j’ai dû partir. »</p><p><i>Femme lesbienne</i></p>',
+    en: '<p>Near the town of Chigorodó, one can find Tascón, a <i><b><u>{1}vereda{/1}</u></b></i> in the town of Dadeiba. There, several members of the 5th <u><b>{2}FARC-EP{/2}</b></u> Front, including the victim’s own uncle, violently assaulted Angie, a lesbian woman who, between 1991 and 1994, was subjected to rape, threats, and torture, when she was only 12 years old: “This happened to me on several occasions, in different veredas. I got pregnant by one of the FARC members, named Juan Carlos, who belonged to the same front as alias Karina. That is why I had to leave.”</p><p><i>Lesbian woman</i></p>',
   },
   tooltips: {
     1: {
       es: '<p>Nota de ejemplo para la crónica T1-04.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-04.</p>',
-      en: '<p>Sample tooltip for chronicle T1-04.</p>',
+      fr: `<p><strong><i>Vereda</i></strong></p>
+<p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
+<p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca. On peut y accéder directement depuis l'autoroute panaméricaine.</small></p>
+<p>Selon le DANE (Département administratif national des statistiques), une <i>vereda</i> est une « division territoriale administrative dans les zones rurales des municipalités, établie par un accord municipal ».</p>
+<p>Au-delà de sa définition administrative, une <i>vereda</i> représente également un espace de vie communautaire rural très soudé. Comme les maisons et les <i>fincas</i> sont relativement proches les unes des autres, les habitants ont tendance à développer de bonnes relations avec le voisinage par le biais d'interactions quotidiennes (que ce soit dans le cadre d'un travail partagé, de réunions locales ou de rencontres sociales). En ce sens, la <i>vereda</i> fonctionne non seulement comme une division géographique, mais aussi comme un espace social où se construisent et se maintiennent les liens communautaires.
+</p>
+<p><a href="https://conceptos.dane.gov.co/conceptos/conceptos/6002/ficha/" target="_blank" rel="noopener noreferrer">DANE</a></p>`,
+      en: `<p><strong><i>Vereda</i></strong></p>
+<p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
+<p><small><i>Vereda</i> of Punta Larga in Popayán, Cauca. It can be reached directly from Pan-American Highway.</small></p>
+<p>According to the DANE (National Administrative Department of Statistics), a <i>vereda</i> is an “Administrative territorial division in rural areas of municipalities, established by municipal agreement.”</p>
+<p>Beyond its administrative definition, a <i>vereda</i> also represents a space of close-knit rural community life. Because homes and <i>fincas</i> are located in relative proximity, residents tend to develop strong neighborly relationships through daily interactions (whether through shared work, local meetings, or social gatherings). In this sense, the vereda functions not only as a geographic division but also as a social space where community ties are built and maintained.
+</p>
+<p><a href="https://conceptos.dane.gov.co/conceptos/conceptos/6002/ficha/" target="_blank" rel="noopener noreferrer">DANE</a></p>`,
+    },
+    2: {
+      es: `<p><strong>FARC-EP</strong> — Fuerzas Armadas Revolucionarias de Colombia – Ejército \
+del Pueblo.</p>
+<p>Organización político-militar. Más contexto (enlace externo): <a href="https://www.un.org/es" \
+target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
+<p><strong>Ejemplo de imagen</strong> en tooltip (ruta bajo <code>images/</code>):</p>
+<p><img src="images/image4.jpg" alt="Ilustración de ejemplo" width="200"></p>`,
+      en: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
+      fr: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>Les FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie.  </p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: '<p>Lugar: Vereda de Tascón, Dadeiba, Urabá antioqueño</p><p>Año: 1991-1994</p><p>Hecho(s) victimizante(s): violencia sexual, amenazas, tortura, desplazamiento, embarazo forzoso</p><p>Actor armado: Frente 5 de las FARC-EP</p>',
+    fr: '<p>Lieu : <i>Vereda</i> de Tascón, Dadeiba, Urabá (Antioquia)</p><p>Date : 1991-1994</p><p>Fait(s) victimisant(s) : violence sexuelle, menaces, torture, déplacement, grossesse forcée</p><p>Acteur armé : Front 5 des FARC-EP</p>',
+    en: '<p>Place: Vereda of Tascón, Dadeiba, Urabá (Antioquia)</p><p>Date: 1991-1994</p><p>Victimizing act(s): sexual violence, threats, torture, displacement, forced pregnancy</p><p>Armed actor: FARC-EP 5th Front',
   },
 };
