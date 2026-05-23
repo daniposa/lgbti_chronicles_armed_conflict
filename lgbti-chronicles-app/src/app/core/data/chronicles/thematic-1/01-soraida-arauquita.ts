@@ -48,7 +48,7 @@ target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
       en: `<p><strong>FARC-EP guerrillas</strong></p>
 <p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
       fr: `<p><strong>FARC-EP guerrillas</strong></p>
-<p>Les FARC-EP ( <i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie.  </p>`,
+<p>Les FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie.  </p>`,
     },
     2: {
       es: `<p>Juego de palabras entre «gay» y la bebida «Gatorade». Referencia: <a \
