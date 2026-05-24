@@ -14,6 +14,7 @@ export const CHRONICLE_T1_05: LocalizedModalContent = {
   },
   tooltips: {
     1: {
+      es: `a`,
       fr: `<p><strong><i>Finca</i></strong></p>
 <p><img src="images/flotantes/finca.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
 <p><small>Une <i>finca</i> en Antioquia</small></p>
@@ -24,6 +25,7 @@ export const CHRONICLE_T1_05: LocalizedModalContent = {
 <p>In Colombia, “finca” is a term commonly used to refer to a house, regardless of its size, located in a rural area. A <i>finca</i> can range from a small country house to a large house with its own plantation. These agricultural plantations can be large expanses of land intended to produce a significant profit, or they can be small vegetable gardens. They may also be empty plots of land that serve no particular purpose, except to provide a place to spend time outside of any city or village.</p>`,
     },
     2: {
+      es: `a`,
       fr: `<p><strong><i>Vereda</i></strong></p>
 <p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
 <p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca. On peut y accéder directement depuis l'autoroute panaméricaine.</small></p>
