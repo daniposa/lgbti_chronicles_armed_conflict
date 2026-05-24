@@ -2,26 +2,30 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_27: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-27 (muestra)',
-    fr: 'Chronique T1-27 (échantillon)',
-    en: 'Chronicle T1-27 (sample)',
+    es: 'Mabel ',
+    fr: 'Mabel ',
+    en: 'Mabel ',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T1-27. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-27. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-27. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `<p>«Yo tenía 22 años y estaba en estado de embarazo de mi niño, tenía dos meses cuando me sucedió eso. Me encontraba en un bar como trabajadora sexual; por el bienestar de mi hija me tocó, porque aquí, en Puerto Boyacá, es muy duro conseguir un empleo. Eso fue un sábado a las diez y media de la noche. Llegaron al negocio unos tipos en una camioneta roja, con armas por lado y lado. Una les temía, porque decían que, si no les hacía lo que ellos decían, la mataban. Me dijeron mentiras, nos cogieron a mí, a una amiga y a una tía y nos llevaron para un monte. Ellos estaban encapuchados, porque así llegaban. Nos amarraron a un árbol, nos quitaron la ropa bruscamente y, como a mí ya se me veía la barriguita por el embarazo, esos tipos me dijeron: “Vamos a darle duro a esta perra, pa que bote ese bastardo”. Me dieron duro en mi abdomen para hacerme botar a mi bebé, pero fue tan fuerte el poder de Dios que no sangré demasiado, aunque tenía síntomas de aborto. A mí me dieron cachazos y tengo cicatrices por eso, me daban más duro que a las otras. Abusaron sexualmente de mí por delante, por detrás, me ponían a hacer cosas que no quería; me apuntaban con el revolver a la cara y, si yo no hacía lo que querían, me pegaban con el arma. Eran cuatro. Hicieron lo que hicieron, nos volvieron una nada, y a mi amiga se la llevaron, no volví a saber de ella. A mí y a mi tía nos dejaron amarradas en el árbol, inconscientes. Medio pude abrir los ojos cuando se fueron en la camioneta y hasta el sol de hoy no supimos más nada. Cuando vi que ya se habían ido, como pude comencé a patear a mi tía para que reaccionara y al fin pudimos soltarnos».</p><p><i>Mujer, urbana, extrabajadora sexual</i></p>
+`,
+    fr: `<p>« J’avais 22 ans et j'étais enceinte de deux mois de mon fils quand cela m’est arrivée. J’étais dans un bar en tant que travailleuse du sexe, pour le bien de ma fille ; ici, à Puerto Boyacá, c’est très difficile de trouver un emploi. C'était un samedi à 22 h 30. Quelques hommes sont venus au bar dans un pick-up rouge, avec des armes de partout. En tant que femmes, nous les craignons, car ils ont dit que, si nous ne faisions pas ce qu’ils voulaient, ils nous tueraient. Ils m’ont menti, ils nous ont emmenées, moi, une amie et une tante dans un <b><u><i>{1}monte{/1}</i></u></b>. Ils étaient cagoulés, car c'est comme ça qu'ils venaient. Ils nous ont attachées à un arbre, ils ont déchiré nos vêtements, et car mon petit ventre de femme enceinte était déjà visible ces mecs ont dit : “On va tabasser cette chienne pour qu’elle jette ce bâtard.” Ils ont violemment tabassé mon ventre pour me faire perdre mon bébé, mais la puissance de Dieu a été si grand que je n’ai pas trop saigné, même si j'avais des symptômes d'avortement. Ils m’ont donné des coups des crosses, j’ai des cicatrices à cause de ça, ils me tabassaient plus fort que les autres. Ils m’ont abusé sexuellement par devant, par derrière, ils me forçaient à faire des choses que je ne voulais pas faire ; ils pointaient une arme sur mon visage et, si je ne faisais pas ce qu'ils voulaient, ils me frappaient avec. Ils étaient quatre. Ils ont fait ce qu'ils ont fait... Ils nous ont réduits en miettes et ils ont emmené mon amie, je n’ai plus jamais eu de ses nouvelles. Ma tante et moi avons été laissées attachées à l'arbre, inconscientes. J’ai pu à peine ouvrir mes yeux quand ils sont partis dans un camion et à ce jour nous n'avons plus de nouvelles. Quand j'ai vu qu'ils étaient déjà partis, j’ai commencé à donner des coups de pied comme je pouvais à ma tante pour la faire réagir et nous avons enfin pu nous libérer. »</p><p><i>Femme, citadine, ancienne travailleuse du sexe</i></p>
+`,
+    en: `<p>“I was 22 and two months pregnant with my son when it happened. I was at a bar as a sex worker; I had to, for my daughter. Here, at Puerto Boyacá, it’s really difficult to find a job. It happened on a Saturday, at 10:30 at night. Some men came to the bar in a red truck, guns on both sides of them. As women, we feared them because rumor was that they would kill you if you didn’t do what they said. They lied to me, and took me, one of my friends and my aunt to a <b><u><i>{1}monte{/1}</i></u></b>. They were hooded, that is how they would show up. They tied us to a tree, ripped our clothes off, and, since my baby bump could already be seen due to the pregnancy, those men said to me: ‘Let’s bash this bitch till she throws out that bastard.’ They punched my abdomen to make me lose my child, but the power of God was so strong that I didn’t even bleed much, although I did have miscarriage symptoms. I was pistol-whipped, which left scars on me. They would hit me harder than the others. They sexually abused me from the front and from behind, they would make me do things I didn’t want to do; they would point a gun at my face and, if I didn’t do what they wanted, they would hit me with it. There were four of them. They did what they wanted to us; they tore us apart. And then they took my friend away. That was the last time I heard about her. My aunt and I were left tied up to the tree, unconscious. I could barely open my eyes when they left in their truck, and up to this very day, we haven’t heard anything else about them. When I saw that they were gone, I started to kick my aunt to get her to react, and we could finally untie ourselves.”</p><p><i>Woman, urbanite, former sex worker</i></p>
+`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-27.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-27.</p>',
-      en: '<p>Sample tooltip for chronicle T1-27.</p>',
+      es: `<p>Nota de ejemplo para la crónica T1-27.</p>`,
+      fr: `<p><strong><i>Monte</i></strong></p>
+      <p>Le <i>monte</i>, au-delà d’une simple référence géographique désignant un espace situé à la périphérie des zones urbaines, renvoie à un territoire rural où des communautés ont vécu et construit leur identité. Il désigne également un espace marqué par le contrôle exercé par des groupes armés, lesquels y ont instauré un ordre extralégal sur les populations locales. Ainsi, le <i>monte</i> est devenu un symbole non seulement de peur et d’illégalité, mais aussi d’identité et de résistance.</p>`,
+      en: `<p><strong><i>Monte</i></strong></p>
+      <p><i>Monte</i>, beyond a geographical reference of a place on the outskirts of an urban area, refers to a place where rural communities have lived and built their identity. It also referes to a point of reference where armed groups have taken control of it and have stablished and ilegal order over the communities that live in the area, this is why it has become a symbol, not only of fear and ilegality, but also of identity and resistance.</p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    fr: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    en: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: Cimitarra, Santander</p><p>Año: 2003</p><p>Hecho(s) victimizante(s): secuestro, violencia sexual, tortura, tentativa de aborto forzado, violencia de género, desaparición forzada</p><p>Actor armado: Autodefensas Campesinas del Magdalena Medio</p>`,
+    fr: `<p>Lieu : Cimitarra, Santander</p><p>Date : 2003</p><p>Fait(s) victimisant(s) : enlèvement, violences sexuelles, torture, tentative d'avortement forcé, violences sexistes, disparition forcée</p><p>Acteur armé : Groupes d'autodéfense paysans du Magdalena Medio</p>`,
+    en: `<p>Place: Cimitarra, Santander</p><p>Date: 2003</p><p>Victimizing act(s): kidnapping, sexual violence, torture, attempted forced abortion, gender-based violence, forced disappearance</p><p>Armed actor: Peasant Self-Defense Groups of the Magdalena Medio</p>`,
   },
 };
