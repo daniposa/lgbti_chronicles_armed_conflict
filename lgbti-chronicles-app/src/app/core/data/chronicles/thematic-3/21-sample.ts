@@ -20,7 +20,7 @@ export const CHRONICLE_T3_21: LocalizedModalContent = {
   },
   contextInfo: {
     es: '<p>Lugar: Cauca</p><p>Año: 2012</p><p>Hecho(s) victimizante(s): violencia sexual, racismo</p><p>Actor armado: guerrilla</p>',
-    es: `<p>Lieu : Cauca</p><p>Date : 2012</p><p>Fait(s) victimisant(s) : violence sexuelle, racisme</p><p>Acteur armé: guérrilla</p>`,
-    es: `<p>Place: Cauca</p><p>Date: 2012</p><p>Victimizing act(s): sexual violence, racism</p><p>Armed actor: guerrilla</p>`,
+    fr: `<p>Lieu : Cauca</p><p>Date : 2012</p><p>Fait(s) victimisant(s) : violence sexuelle, racisme</p><p>Acteur armé: guérrilla</p>`,
+    en: `<p>Place: Cauca</p><p>Date: 2012</p><p>Victimizing act(s): sexual violence, racism</p><p>Armed actor: guerrilla</p>`,
   },
 };
