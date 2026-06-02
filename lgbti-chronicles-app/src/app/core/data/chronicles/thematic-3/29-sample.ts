@@ -16,19 +16,19 @@ export const CHRONICLE_T3_29: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T3-29.</p>`,
       fr: `<p><strong>Frente Nacional</strong></p>
       <p>En 1958, face à la montée des luttes populaires radicales et à la menace d'un troisième parti, les partis libéral et conservateur ont conclu un accord de partage du pouvoir connu sous le nom de Frente nacional. Cet accord est essentiel pour comprendre l’évolution des années 1960, car il a donné lieu à un projet de réorganisation de l’État qui a remodelé les relations non seulement entre les deux partis traditionnels, mais aussi entre les groupes dominants et subalternes. La réorganisation des alliances lors de la première période du Frente nacional a contribué à réduire considérablement les violences entre les partis, mais, à cause de la manière dont l’État a été réorganisée, le Frente nacional a engendré de nouvelles conditions de conflit, qui ont culminé avec la montée de la violence révolutionnaire.</p>
-      <p><a href="https://www.tandfonline.com/doi/full/10.1080/09592318.2024.2336635#d1e141" target="_blank" rel="noopener noreferrer">Small Wars & Insurgencies</a></p>`,
+      <p><a href="https://web.archive.org/web/20240505000850/https://www.tandfonline.com/doi/full/10.1080/09592318.2024.2336635#d1e141" target="_blank" rel="noopener noreferrer">Small Wars & Insurgencies</a></p>`,
       en: `<p><strong>Frente Nacional</strong></p>
       <p>In 1958, witnessing the ascendance of radical-popular struggles and the threat of a third party, the Liberal and Conservative Parties implemented a power-sharing agreement known as the National Front. This agreement is crucial to understanding developments in the 1960s because it gave rise to a project of state reorganization which refashioned the relationship not only between the two traditional parties but also between dominant and subaltern groups. The reorganization of alliances under the National Front’s earlier period helped to significantly reduce inter-party violence, but because of the way in which the form of state was reorganized, the National Front produced new conditions of conflict, culminating in the growth of revolutionary violence.</p>
-      <p><a href="https://www.tandfonline.com/doi/full/10.1080/09592318.2024.2336635#d1e141" target="_blank" rel="noopener noreferrer">Small Wars & Insurgencies</a></p>`,
+      <p><a href="https://web.archive.org/web/20240505000850/https://www.tandfonline.com/doi/full/10.1080/09592318.2024.2336635#d1e141" target="_blank" rel="noopener noreferrer">Small Wars & Insurgencies</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-29.</p>`,
       fr: `<p><strong><i>Chusmeros</i></strong></p>
       <p>Au XXe siècle, les conflits idéologiques entre les partis politiques ont conduit à des soulèvements armés, qui ont ensuite donné naissance à la « <i>chusma</i> »  (un groupe d'agriculteurs libéraux, motivés par des passions déchaînées après le Bogotazo) et à la « <i>chulavitas</i> » (un groupe légalement armé composé de paysans conservateurs du hameau de Chulavita à Boyacá, dont la tâche était d'éradiquer la violence à Bogotá causée par la <i>chusma</i> une mission qu'ils ont accomplie avec le sang et le feu, en réalité, par des massacres).</p>
-      <p><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6000757 " target="_blank" rel="noopener noreferrer">Source</a></p>`,
+      <p><a href="https://web.archive.org/web/20250328061649/https://dialnet.unirioja.es/servlet/articulo?codigo=6000757" target="_blank" rel="noopener noreferrer">Iustitia</a></p>`,
       en: `<p><strong><i>Chusmeros</i></strong></p>
       <p>In the 20th century, ideological conflicts between political parties led to armed uprisings, which later gave rise to the ‘<i>chusma</i>’ (a group of liberal farmers, driven by passions unleashed after the Bogotazo) and the ‘<i>chulavitas</i>’ (a legally armed group composed of conservative peasants from the Chulavita hamlet in Boyacá, whose task was to eradicate the violence in Bogotá caused by the <i>chusma</i>—a mission they carried out with blood and fire, effectively, through massacres). </p>
-      <p><a href="https://dialnet.unirioja.es/servlet/articulo?codigo=6000757 " target="_blank" rel="noopener noreferrer">Source</a></p>`,
+      <p><a href="https://web.archive.org/web/20250328061649/https://dialnet.unirioja.es/servlet/articulo?codigo=6000757" target="_blank" rel="noopener noreferrer">Iustitia</a></p>`,
     },
     3: {
       es: `<p>Nota de ejemplo para la crónica T3-29.</p>`,
