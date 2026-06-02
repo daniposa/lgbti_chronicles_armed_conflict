@@ -43,7 +43,7 @@ Ya yo me despido. Soy la Vigorosa, señores.<br>
 
 Ya hemos resistido, ¡llora!, sigue tu camino</p> 
 
-<p>Canción compuesta por víctimas LGBTIQ+ del conflicto de Colombia e interpretada por la Vigorosa en el espacio de escucha con personas LGBTIQ+. Comisión de la Verdad, «Espacio de escucha: Desarmando el prejuicio», 22 de octubre de 2020, 1h 42min 10s</p>`,
+<p><b>{1}Canción{/1}</b> compuesta por víctimas LGBTIQ+ del conflicto de Colombia e interpretada por la Vigorosa en el espacio de escucha con personas LGBTIQ+. Comisión de la Verdad, «Espacio de escucha: Desarmando el prejuicio», 22 de octubre de 2020, 1h 42min 10s</p>`,
     fr: `<p><i>La Colombie pleure pour moi, il y a de gens qui tuent.<br>  
 
 Ma mère souffre [elle pleure !] la foule m’attaque.<br>  
@@ -82,7 +82,7 @@ Je dis déjà au revoir. Je suis la Vigorosa, mesdames et messieurs.<br>
 
 Nous avons déjà résisté [nous pleurons !] continue ton chemin !</i></p> 
 
-<p><b><u>{1}Chanson{/1}</u></b> composé par victimes LGBTIQ+ du conflit en Colombie et interprété par La Vigorosa dans un espace d’écoute avec personnes LGBTIQ+. Commission de la Vérité, «Espacio de escucha: Desarmando el prejuicio», 22 octobre, 2020, 1h 42min 10s</p>`,
+<p><b>{1}Chanson{/1}</b> composé par victimes LGBTIQ+ du conflit en Colombie et interprété par La Vigorosa dans un espace d’écoute avec personnes LGBTIQ+. Commission de la Vérité, «Espacio de escucha: Desarmando el prejuicio», 22 octobre, 2020, 1h 42min 10s</p>`,
     en: `<p><i>Colombia cries for me, there are some who kill.<br>   
 
 My mother suffers [she cries!] The townsfolk attack me.<br>   
@@ -115,15 +115,16 @@ Now I say goodbye. I’m Vigorosa, ladies and gentlemen.<br>
 
 We have resisted for a very long time, we cry! Go on your own way!</p> 
 
-<p><b><u>{1}Song{/1}</u></b> composed by LGBTIQ+ victims from Colombian conflict and performed by La Vigorosa at the listening space with LGBTIQ+ people: Truth Commission, «Espacio de escucha: Desarmando el prejuicio», October 22, 2020, 1h 42min 10s</p>`,
+<p><b>{1}Song{/1}</b> composed by LGBTIQ+ victims from Colombian conflict and performed by La Vigorosa at the listening space with LGBTIQ+ people: Truth Commission, «Espacio de escucha: Desarmando el prejuicio», October 22, 2020, 1h 42min 10s</p>`,
   },
   tooltips: {
     1: {
-      es: `<p>Nota de ejemplo para la crónica T3-17.</p>`,
+      es: `<p><strong>Canción</strong></p>
+      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong>Chanson</strong></p>
-      <p><a href="https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">YouTube</a></p>`,
+      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong>Song</strong></p>
-      <p><a href="https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">YouTube</a></p>`,
+      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
     },
   },
   contextInfo: {
