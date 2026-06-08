@@ -120,11 +120,11 @@ We have resisted for a very long time, we cry! Go on your own way!</p></i>
   tooltips: {
     1: {
       es: `<p><strong>Canción</strong></p>
-      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong>Chanson</strong></p>
-      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong>Song</strong></p>
-      <p><a href="https://web.archive.org/web/20260602134936/https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=DhGCM-cdUsg&list=RDDhGCM-cdUsg&start_radio=1" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
     },
   },
   contextInfo: {
