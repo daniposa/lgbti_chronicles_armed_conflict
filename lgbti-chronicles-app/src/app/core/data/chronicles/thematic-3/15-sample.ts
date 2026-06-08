@@ -14,14 +14,14 @@ export const CHRONICLE_T3_15: LocalizedModalContent = {
   tooltips: {
     1: {
       es: `<p><strong>Batucada</strong></p>
-      <p><a href="https://web.archive.org/web/20260602134122/https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">Video en YouTube 1</a></p>
-      <p><a href="https://web.archive.org/web/20260602134323/https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">Video en YouTube 2</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">Video en YouTube 1</a></p>
+      <p><a href="https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">Video en YouTube 2</a></p>`,
       fr: `<p><strong><i>Batucada</i></strong></p>
-      <p><a href="https://web.archive.org/web/20260602134122/https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube 1</a></p>
-      <p><a href="https://web.archive.org/web/20260602134323/https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube 2</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube 1</a></p>
+      <p><a href="https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube 2</a></p>`,
       en: `<p><strong><i>Batucada</i></strong></p>
-      <p><a href="https://web.archive.org/web/20260602134122/https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">YouTube Video 1</a></p>
-      <p><a href="https://web.archive.org/web/20260602134323/https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">YouTube Video 2</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=Q9mr8cp54KI" target="_blank" rel="noopener noreferrer">YouTube Video 1</a></p>
+      <p><a href="https://www.youtube.com/watch?v=BbWZ1UauJaw" target="_blank" rel="noopener noreferrer">YouTube Video 2</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-15.</p>`,
