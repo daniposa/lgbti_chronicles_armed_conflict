@@ -21,7 +21,7 @@ export const CHRONICLE_T1_11: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Belén de los Andaquíes, Caquetá</p><p>Año: 1998</p><p>Hecho(s) victimizante(s): abuso físico y psicológico</p><p>Actor armado: Paramilitares</p>`,
+    es: `<p>Lugar: Belén de los Andaquíes, Caquetá</p><p>Año: 1998</p><p>Hecho(s) victimizante(s): abuso físico y psicológico</p><p>Actor armado: paramilitares</p>`,
     fr: `<p>Lieu : Belén de los Andaquíes, Caquetá </p><p>Date : 1998 </p><p>Fait(s) victimisant(s) : abus physiques et psychologiques</p><p>Acteur armé : les paramilitaires</p>`,
     en: `<p>Place: Belén de los Andaquíes, Caquetá </p><p>Date: 1998 </p><p>Victimizing act(s): physical and psychological abuse</p><p>Armed actor: paramilitary members</p>`,
   },
