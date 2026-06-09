@@ -232,13 +232,6 @@ type Tab = 'intro' | 'chronicles';
         display: block;
         width: 100%;
       }
-      /* Override card styles over the image for a glass effect */
-      .card-pin :global(.card) {
-        background: rgba(248, 244, 239, 0.82) !important;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-      }
-
       /* ── fullscreen image ── */
       .image-fullscreen {
         position: fixed;

@@ -10,6 +10,7 @@ import type { Language } from '../../../../core/services/language.service';
       class="card"
       [class.selected]="selected"
       [style.min-height.px]="card?.placement?.height"
+      [style.--card-bg-alpha]="card?.backgroundAlpha ?? 0.28"
       (click)="select.emit()"
     >
       <h3
@@ -25,7 +26,7 @@ import type { Language } from '../../../../core/services/language.service';
     `
       .card {
         padding: 0.25rem 2.5%;
-        border: 1px solid var(--color-border);
+        border: 2px solid #ffe033;
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.25s ease;
@@ -35,18 +36,30 @@ import type { Language } from '../../../../core/services/language.service';
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: var(--color-paper);
-        box-shadow: var(--shadow-card);
+        /* Semi-transparent so the background illustration shows through.
+           Alpha is configurable per card via the --card-bg-alpha property. */
+        background: rgba(248, 244, 239, var(--card-bg-alpha, 0.28));
+        /* Yellow neon glow (same color as the glow icons). */
+        box-shadow:
+          0 0 6px rgba(255, 220, 0, 0.9),
+          0 0 14px rgba(255, 220, 0, 0.6),
+          inset 0 0 6px rgba(255, 220, 0, 0.3);
       }
       .card:hover {
-        border-color: var(--color-ink-light);
-        box-shadow: var(--shadow-soft);
-        background: var(--color-paper-warm);
+        border-color: #fff176;
+        background: rgba(248, 244, 239, calc(var(--card-bg-alpha, 0.28) + 0.1));
+        box-shadow:
+          0 0 10px rgba(255, 220, 0, 1),
+          0 0 22px rgba(255, 220, 0, 0.8),
+          inset 0 0 10px rgba(255, 220, 0, 0.4);
       }
       .card.selected {
-        border-color: var(--color-accent);
-        background: var(--color-paper-warm);
-        box-shadow: var(--shadow-soft);
+        border-color: #fff176;
+        background: rgba(248, 244, 239, calc(var(--card-bg-alpha, 0.28) + 0.1));
+        box-shadow:
+          0 0 12px rgba(255, 220, 0, 1),
+          0 0 26px rgba(255, 220, 0, 0.85),
+          inset 0 0 10px rgba(255, 220, 0, 0.45);
       }
       .card h3 {
         margin: 0;

@@ -137,10 +137,12 @@ export const CARDS_DATA: CardData[] = [
     placement: { x: 8.3, y: 85, width: 72, height: 100 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
-      fontFamily: 'var(--font-display)',
-      fontSize: '0.9rem',
+      fontFamily: 'var(--font-hand)',
+      fontSize: '1.1rem',
       color: 'var(--color-ink)',
     },
+    // Background opacity (0 = transparent, 1 = opaque).
+    backgroundAlpha: 0.5,
     hotspots: buildGridHotspots(CHRONICLES_T1, { prefix: 't1' }),
   },
   {
@@ -148,13 +150,15 @@ export const CARDS_DATA: CardData[] = [
     title: { es: '¿Por qué pasó?', fr: 'Pourquoi il a passé ?', en: 'Why did it happen?' },
     imagePath: 'images/paisajes/paisaje_por_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 48.2, y: 81, width: 120, height: 125 },
+    placement: { x: 48.2, y: 81.5, width: 120, height: 120 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
-      fontFamily: 'var(--font-display)',
-      fontSize: '0.9rem',
+      fontFamily: 'var(--font-hand)',
+      fontSize: '1.1rem',
       color: 'var(--color-ink)',
     },
+    // Background opacity (0 = transparent, 1 = opaque).
+    backgroundAlpha: 0.5,
     hotspots: buildGridHotspots(CHRONICLES_T2, { prefix: 't2' }),
   },
   {
@@ -166,13 +170,15 @@ export const CARDS_DATA: CardData[] = [
     },
     imagePath: 'images/paisajes/paisaje_que paso_con_lo_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 80.9, y: 79.5, width: 85, height: 145 },
+    placement: { x: 80.6, y: 79.5, width: 85, height: 145 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
-      fontFamily: 'var(--font-display)',
-      fontSize: '0.9rem',
+      fontFamily: 'var(--font-hand)',
+      fontSize: '1.1rem',
       color: 'var(--color-ink)',
     },
+    // Background opacity (0 = transparent, 1 = opaque).
+    backgroundAlpha: 0.5,
     hotspots: buildGridHotspots(CHRONICLES_T3, { prefix: 't3' }),
   },
 ];

@@ -92,6 +92,11 @@ export interface CardData {
   placement: CardPlacement;
   /** Optional typography overrides for the card title. */
   textStyle?: CardTextStyle;
+  /**
+   * Background opacity of the card (0 = fully transparent, 1 = opaque).
+   * Defaults to 0.28 when omitted.
+   */
+  backgroundAlpha?: number;
   hotspots: Hotspot[];
 }
 
