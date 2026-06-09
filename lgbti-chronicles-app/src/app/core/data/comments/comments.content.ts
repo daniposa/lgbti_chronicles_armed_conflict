@@ -93,7 +93,7 @@ Línea de tiempo del conflicto armado colombiano a partir de la periodización d
   <img 
     src="images/comentarios/comentarios_metodologia.avif" 
     alt="Metodología" 
-    style="float: right; margin-left: 15px; margin-bottom: 10px; width: 250px;"
+    width="400"
   >
   Recorrimos un camino poco usual en el quehacer académico de las estudiantes de traducción en nuestra Escuela. Primero, decidimos hacer una <i>traducción comentada</i> en el marco de unas prácticas investigativas, con ella pudimos plasmar una reflexión crítica y argumentada donde se da cuenta tanto del proceso de traducción como del producto final (Williams y Chesterman, 2002; Johnson, 2023). Segundo, nos encontramos con el reto, y la fortuna, de realizar un proceso de <i>traducción colectiva</i> (O’Brien, 2011) y <i>comunizante</i> (Rosas <i>et al</i>., 2025) que nos permitió juntar, enfrentar y hacer coincidir nuestras manos, nuestras voces, nuestros rasgos más distintivos y nuestras trayectorias como personas y como traductoras en formación. Por último, nos empecinamos y arriesgamos a hacer una traducción inversa que nos enfrentó, no solo a nuestros miedos con la lengua extranjera, sino, también, como pasa con la traducción en general, a la otredad. 
 </p>
