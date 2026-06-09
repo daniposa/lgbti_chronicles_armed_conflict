@@ -2,7 +2,7 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_40: LocalizedModalContent = {
   // Hotspot button position over the image (x, y as % of the image, to its center).
-  hotspot: { x: 62.57, y: 74 },
+  hotspot: { x: 30.260, y: 45 },
   title: {
     es: 'Julieta',
     fr: 'Julieta',
