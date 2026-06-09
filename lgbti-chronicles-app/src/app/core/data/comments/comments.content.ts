@@ -26,15 +26,37 @@ Línea de tiempo del conflicto armado colombiano a partir de la periodización d
     <img 
       src="images/comentarios/mapa.avif"
       alt="Mapa"
-      width="500"
+      width="400"
     ><br>
     <small><i>Nota</i>. Fuente https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones (CEV, 2022c).</small></p>
     <p>No solo se vivieron dinámicas territoriales diversas, sino que también los impactos fueron diferenciados según poblaciones específicas: campesinos, mujeres, poblaciones étnicas, población LGBTIQ+, sectores políticos, estudiantes, funcionarios públicos, empresarios, personas con discapacidades y un largo etcétera. En relación con todos estos enfoques diferenciales, se tiene que la población víctima del conflicto armado es la población más empobrecida del país: para el 2024 el 44,6&nbsp;%, el 18,1&nbsp;% y el 18,4&nbsp;% de las víctimas se encontraban en situación de pobreza monetaria, extrema y multidimensional, respectivamente (DANE, 2026).
   </p>
-  <h3>Paisajes de traducción</h3>
-  <p>
-    Para ilustrar la diversidad cultural, incluimos imágenes representativas:
-    <br>
+  <h3>Sobre el texto original</h3>
+  <p style="text-indent: 40px;">
+    El <i>Informe Final</i> (IF) es el producto legado a la sociedad por la CEV tras el proceso de esclarecimiento de verdad y diálogo social realizado entre noviembre del 2018 y junio del 2022. Está conformado por 11 capítulos:</p>
+  <blockquote>
+  <p>Capítulo introductorio;<br> 
+
+«Hallazgos y recomendaciones»;<br>  
+
+«No matarás» (relato histórico);<br> 
+
+«Colombia adentro» (relatos territoriales, dividido en trece tomos);<br> 
+
+«Hasta la guerra tiene límites» (sobre violaciones a los Derechos Humanos y el DIH);<br> 
+
+«Cuando los pájaros no cantaban» (capítulo testimonial),<br>  
+
+«Sufrir la guerra y rehacer la vida» (sobre impactos, resistencias y afrontamientos),<br>  
+
+«La Colombia fuera de Colombia» (sobre exilios);<br> 
+
+«Resistir no es aguantar» (sobre comunidades étnicas);<br>  
+
+«No es un mal menor» (sobre niños, niñas y adolescentes); y<br>  
+
+«Mi cuerpo es la verdad» (sobre mujeres y población LGBTIQ+).</p>
+</blockquote>
     <img 
       src="images/paisajes/paisaje_que_paso.avif"
       alt="Paisaje ¿Qué pasó?"
