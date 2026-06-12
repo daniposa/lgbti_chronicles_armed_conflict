@@ -88,8 +88,7 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Ilustradoras / Illustrators',
-      names: 'Yenly Alexandra Ramírez Galindo (NÉMXSIS), Michell Piedrahita Restrepo (Mitch), Laura Jineth Rojas Sabogal (Flecha Roja)
-',
+      names: 'Yenly Alexandra Ramírez Galindo (NÉMXSIS), Michell Piedrahita Restrepo (Mitch), Laura Jineth Rojas Sabogal (Flecha Roja)',
     },
     {
       label: 'Revisorar / Proofreaders',
