@@ -130,7 +130,7 @@ export const TAB_SECOND_LABEL = PAGE_CONFIG.tabs.second;
 export const CARDS_DATA: CardData[] = [
   {
     id: 1,
-    title: { es: '¿Qué pasó?', fr: 'Qu’est-ce qu’il a passé ?', en: 'What happened?' },
+    title: { es: '', fr: '', en: '' },
     imagePath: 'images/paisajes/paisaje_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
     placement: { x: 8.3, y: 85, width: 72, height: 100 },
@@ -141,7 +141,7 @@ export const CARDS_DATA: CardData[] = [
       color: 'var(--color-ink)',
     },
     // Background opacity (0 = transparent, 1 = opaque).
-    backgroundAlpha: 0.5,
+    backgroundAlpha: 0.1,
     hotspots: buildGridHotspots(CHRONICLES_T1, { prefix: 't1' }),
   },
   {
