@@ -127,6 +127,18 @@ import { TextParserService } from '../../core/services/text-parser.service';
         margin-top: var(--space-lg);
         color: inherit;
       }
+      ::ng-deep .tippy-box, 
+      ::ng-deep .tooltip-box,
+      ::ng-deep [data-template] { 
+        max-width: 450px !important; /* Aumenta el ancho máximo (antes seguro estaba en 250px o 300px) */
+        width: 400px !important;     /* Define un ancho base cómodo */
+      }
+
+      /* Opcional: Si el texto sigue siendo muy largo, esto le añade una barra de desplazamiento interna para que NUNCA se corte abajo */
+      ::ng-deep .tippy-content {
+        max-height: 400px;
+        overflow-y: auto;
+      }
       .comments-text ::ng-deep .seccion-lectura {
         display: grid;
         grid-template-columns: 1fr 1.5fr; /* Divide el espacio: la imagen y el texto */
