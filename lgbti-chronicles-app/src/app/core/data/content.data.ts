@@ -91,8 +91,8 @@ export const LANDING_CREDITS: LandingCredits = {
       names: ' Yenly Alexandra Ramírez Galindo (NÉMXSIS)<br>Michell Piedrahita Restrepo (Mitch)<br>Laura Jineth Rojas Sabogal (Flecha Roja)',
     },
     {
-      label: 'Revisorar / Proofreaders',
-      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Lauryne Angot (translation intern), Doris Correa (Centro de Multiliteracidades)',
+      label: 'Revisoras / Proofreaders',
+      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Lauryne Angot (translation intern)<br>Doris Correa (Centro de Multiliteracidades)',
     },
     {
       label: 'Asesores de Prácticas / Internship Advisors',
@@ -100,11 +100,11 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Programación del Sitio Web / Web Programming',
-      names: ' Daniela Posada (Ingeniera / Engineer)',
+      names: ' Daniela Posada (ingeniera / engineer)',
     },
     {
       label: 'Apoyo Institucional / Institutional Support',
-      names: ' Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages)<br>Catalina Tobón Sánchez (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant)<br>Luis Octavio Valle García (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages)<br>Jaime Usma (Director Escuela de Idiomas / School of Languages Director)',
+      names: ' Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages)<br>Jaime Usma (director Escuela de Idiomas / School of Languages director)',
     },
   ],
 };
