@@ -247,7 +247,7 @@ text: `
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
   <h2>Referencias</h2>
-<p class="referencia">Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</p>
+<div class="referencia-francesa">Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</div>
 
 <p class="referencia">Acedo, N. (2017). El género testimonio en Latinoamérica: aproximaciones críticas en busca de su definición, genealogía y taxonomía. <i>Latinoamérica</i>, (64), 39-69. https://doi.org/10.22201/cialc.24486914e.2017.64.56863</p>
 
