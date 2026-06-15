@@ -29,7 +29,7 @@ Esos hombres organizaban el próximo encuentro cultural del municipio.<br> 
 
 Eran los años ochenta.</i></p> 
 
-<p>Fragmento construido a partir de las voces de las personas LGBTIQ+ en entrevistas individuales e informes entregados por organizaciones de la sociedad civil a la Comisión</p>`,
+<p class="identificador">Fragmento construido a partir de las voces de las personas LGBTIQ+ en entrevistas individuales e informes entregados por organizaciones de la sociedad civil a la Comisión</p>`,
     fr: `<p><i>On était bouleversé par le son du fleuve.<br>
 
 Les chants des oiseaux et les voix des enfants l’ornaient.<br>    
@@ -48,7 +48,7 @@ Dans le fleuve, on se retrouvait, on se donnait la liberté d’être ceux que�
 
 C’était les années quatre-vingt.</i></p> 
 
-<p>Fragment construit par des voix des personnes LGBTIQ+ dans entretiens individuels et rapports donnés par organisations du société civile à la Commission</p>`,
+<p class="identificador">Fragment construit par des voix des personnes LGBTIQ+ dans entretiens individuels et rapports donnés par organisations du société civile à la Commission</p>`,
     en: `<p><i>The sound of the river was touching.<br>  
 
 the songs of birds and the voices of children beautified it.<br>  
@@ -65,7 +65,7 @@ When the ‘warlords’ were not around, those men would gather around the river
 
 At the river, they would gather, they would let themselves be what the ‘warlords’ did not want them to be. They would mock their rules, and looked for ways to go back to being and living in their own territories as they wished. Those men would plan the next cultural event in town. It was the eighties.</i></p> 
 
-<p>This fragment has been created from the voices of LGBTIQ+ people in individual interviews and reports given by civil society organizations to the Commission</p>`,
+<p class="identificador">This fragment has been created from the voices of LGBTIQ+ people in individual interviews and reports given by civil society organizations to the Commission</p>`,
   },
   tooltips: {
     1: {
