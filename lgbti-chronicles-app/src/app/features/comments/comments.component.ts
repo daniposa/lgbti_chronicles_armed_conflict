@@ -84,68 +84,58 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      .page-main {
+     .page-main {
         position: relative;
         z-index: 1;
-        width: 70%;
-        max-width: 1200px;
+        width: 90%;           /* <-- Subimos de 70% a 90% para reducir el espacio muerto a los lados */
+        max-width: 1400px;    /* <-- Permitimos que se expanda más en pantallas grandes */
         margin: 0 auto;
-        padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+        padding: var(--space-xl) var(--space-md) var(--space-2xl);
       }
+
       .comments-text {
         font-size: 1.05rem;
         line-height: 1.85;
         color: var(--color-ink);
       }
       
-      /* 1. Justifica todo el texto y añade espacio entre párrafos */
+      /* Formato general de los párrafos */
       .comments-text ::ng-deep p {
         text-align: justify;
-        text-justify: inter-word; /* Hace que el justificado se vea más limpio */
-        margin-bottom: var(--space-md);
+        text-justify: inter-word;
+        text-indent: 2rem;     /* Tu sangría en la primera línea */
+        margin: 0 0 var(--space-md) 0;
       }
 
-      /* 2. Aplica la sangría únicamente a la primera línea de cada párrafo */
-      .comments-text ::ng-deep p {
-        text-indent: 2rem; /* Puedes subirlo a 3rem si quieres más sangría */
-      }
-
-     /* Contenedor para cada bloque de lectura (Sección 1, Sección 2, etc.) */
+      /* ── CONTENEDOR EN DOS COLUMNAS (La magia anti-licuadora) ── */
       .comments-text ::ng-deep .seccion-lectura {
-        display: block;
-        position: relative;
-        margin-bottom: var(--space-2xl); /* Espacio generoso entre secciones */
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; /* Divide el espacio: la imagen y el texto */
+        gap: 40px;                        /* Espacio de separación entre las dos columnas */
+        align-items: start;
+        margin-bottom: var(--space-3xl);  /* Espacio libre antes de la siguiente sección */
       }
 
-      /* Imagen Pegajosa a la Izquierda */
-      .comments-text ::ng-deep .img-izquierda {
-        float: left;
-        position: -webkit-sticky; /* Soporte para Safari */
-        position: sticky;
-        top: 18vh;                /* <-- Se queda quieta a esta distancia del tope de la pantalla */
-        margin-right: 30px;
-        margin-bottom: 20px;
-        max-width: 40%;
-        height: auto;
+      /* Si quieres intercalar: esta clase hace que el texto vaya primero y la imagen a la derecha */
+      .comments-text ::ng-deep .seccion-lectura.invertida {
+        grid-template-columns: 1.5fr 1fr;
       }
 
-      /* Imagen Pegajosa a la Derecha */
-      .comments-text ::ng-deep .img-derecha {
-        float: right;
+      /* Contenedor interno para que el sticky funcione perfecto */
+      .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 18vh;                /* <-- Lo mismo para la derecha */
-        margin-left: 30px;
-        margin-bottom: 20px;
-        max-width: 40%;
-        height: auto;
+        top: 15vh;                        /* Altura en la que se congela la imagen al bajar */
       }
 
-      /* Limpieza para que los párrafos no se vuelvan locos con el float */
-      .comments-text ::ng-deep p::after {
-        content: "";
-        display: table;
-        clear: both;
+      /* Ajuste de las imágenes dentro de su columna */
+      .comments-text ::ng-deep .columna-imagen img {
+        width: 100%;
+        max-width: 450px;                 /* Tamaño máximo para que no se pixele */
+        height: auto;
+        border-radius: 8px;               /* Bordes suavizados opcionales */
+        display: block;
+        margin: 0 auto;
       }
       
     `,
