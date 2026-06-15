@@ -84,19 +84,19 @@ export const LANDING_CREDITS: LandingCredits = {
   lines: [
     {
       label: 'Integrantes del Semillero / Research Group Members',
-      names: ' Luisa Fernanda Vélez Agudelo (Medellín, Antioquia) (correctora de estilo / proofreader), Mariana Rojas Agudelo (Bello, Antioquia) (traductora, coordinadora / translator, coordinator), Sergio Andrés Paz Gómez (Popayán, Cauca) (traductor, programador / translator, programmer), Mariana Collo Reyes (Popayán, Cauca) (traductora / translator), Andrea Carolina Figueroa Mendoza (Corozal, Sucre) (traductora / translator), Cristian Muñoz Sanchez (Yarumal, Antioquia) (traductor / translator), Mariana Macías García (San Antonio de Prado, Antioquia) (traductora / translator), Valentina Castañeda Márquez (Bogotá, Bogotá D. C.) (traductora / translator), Paula Andrea Montoya Arango (Medellín, Antioquia) (profesora, coordinadora / professor, coordinator)',
+      names: ' Luisa Fernanda Vélez Agudelo (Medellín, Antioquia) (correctora de estilo / proofreader)<br>Mariana Rojas Agudelo (Bello, Antioquia) (traductora, coordinadora / translator, coordinator)<br>Sergio Andrés Paz Gómez (Popayán, Cauca) (traductor, programador / translator, programmer)<br>Mariana Collo Reyes (Popayán, Cauca) (traductora / translator)<br>Andrea Carolina Figueroa Mendoza (Corozal, Sucre) (traductora / translator)<br>Cristian Muñoz Sanchez (Yarumal, Antioquia) (traductor / translator)<br>Mariana Macías García (San Antonio de Prado, Antioquia) (traductora / translator)<br>Valentina Castañeda Márquez (Bogotá, Bogotá D. C.) (traductora / translator)<br>Paula Andrea Montoya Arango (Medellín, Antioquia) (profesora, coordinadora / professor, coordinator)',
     },
     {
       label: 'Ilustradoras / Illustrators',
-      names: ' Yenly Alexandra Ramírez Galindo (NÉMXSIS), Michell Piedrahita Restrepo (Mitch), Laura Jineth Rojas Sabogal (Flecha Roja)',
+      names: ' Yenly Alexandra Ramírez Galindo (NÉMXSIS)<br>Michell Piedrahita Restrepo (Mitch)<br>Laura Jineth Rojas Sabogal (Flecha Roja)',
     },
     {
       label: 'Revisorar / Proofreaders',
-      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French), Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French), Lauryne Angot (translation intern), Doris Correa (Centro de Multiliteracidades)',
+      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés / translation intern and translator from English and Spanish into French)<br>Lauryne Angot (translation intern), Doris Correa (Centro de Multiliteracidades)',
     },
     {
       label: 'Asesores de Prácticas / Internship Advisors',
-      names: ' Alejandro Arroyave Tobón (profesor / professor), Juan Guillermo Ramírez Giraldo (profesor / professor), Daniel Felipe Jaramillo Giraldo (profesor / professor)',
+      names: ' Alejandro Arroyave Tobón (profesor / professor)<br>Juan Guillermo Ramírez Giraldo (profesor / professor)<br>Daniel Felipe Jaramillo Giraldo (profesor / professor)',
     },
     {
       label: 'Programación del Sitio Web / Web Programming',
@@ -104,7 +104,7 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Apoyo Institucional / Institutional Support',
-      names: ' Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages), Catalina Tobón Sánchez (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant), Luis Octavio Valle García (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant), Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages), Jaime Usma (Director Escuela de Idiomas / School of Languages Director)',
+      names: ' Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages)<br>Catalina Tobón Sánchez (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant)<br>Luis Octavio Valle García (Auxiliar de la Coordinación de Investigaciones / Research Coordination Assistant)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages)<br>Jaime Usma (Director Escuela de Idiomas / School of Languages Director)',
     },
   ],
 };
