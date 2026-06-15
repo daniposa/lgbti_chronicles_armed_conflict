@@ -58,7 +58,7 @@ Jesucristo estaba muerto, de muerto resucitó, de muerto resucitó.<br>
 Blancas son las cuatro velas, Blancas son las cuatro velas.<br> 
 
 (Avemaría purísima).</i></p>
-<p>Agrupación musical Plu con Pla y las Cantaoras Esperanza y Paz de Tumaco</p>`,
+<p class="identificador">Agrupación musical Plu con Pla y las Cantaoras Esperanza y Paz de Tumaco</p>`,
     fr: `<p><b>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b> [Femmes, faites entendre vos voix, musique pour résister et ne pas oublier]</p>   
 
 <p><i>Ils sont sages, ils partagent tout leur savoir<br>   
@@ -113,7 +113,7 @@ Blanches sont les quatre bougies, blanches sont les quatre bougies.<br>
 
 (Avemaría purísima).</i></p> 
 
- <p>Groupe musical Plu con Pla et les <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
+ <p class="identificador">Groupe musical Plu con Pla et les <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
     en: `<p><b>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b> [Raise your voices, women, music to resist and not forget]</p>   
 
 <p><i>They are wise, for they teach all their knowledge,<br>  
@@ -168,7 +168,7 @@ White are the four candles, white are the four candles.<br>
 
 (Avemaría purísima).</i></p> 
 
-<p>Musical group Plu con Pla and <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
+<p class="identificador">Musical group Plu con Pla and <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
   },
   tooltips: {
     1: {
