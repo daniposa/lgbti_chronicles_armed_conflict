@@ -153,6 +153,21 @@ import { TextParserService } from '../../core/services/text-parser.service';
         display: block;
         margin: 0 auto;
       }
+      .comments-text ::ng-deep blockquote {
+        margin: var(--space-md) var(--space-xl); /* Varía el espacio horizontal para empujar todo el bloque hacia adentro */
+        color: inherit; /* Mantiene exactamente tu color original #2e4a3b */
+      }
+
+      /* 2. Ajustes para los párrafos de la cita: sin sangría inicial y 2 puntos más pequeños */
+      .comments-text ::ng-deep blockquote p {
+        text-indent: 0 !important; /* Elimina por completo la sangría de la primera línea */
+        text-align: justify;
+        margin-bottom: var(--space-sm);
+        color: inherit;
+        
+        /* Reducimos el tamaño de la letra exactamente 2 puntos (de 1.05rem a 0.85rem) */
+        font-size: 0.85rem; 
+      }
     `,
   ],
 })
