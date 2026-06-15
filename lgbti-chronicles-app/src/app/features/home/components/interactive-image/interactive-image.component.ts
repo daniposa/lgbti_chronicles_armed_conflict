@@ -7,7 +7,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
   standalone: true,
   imports: [ModalContentComponent],
   template: `
-    <div class="image-container">
+    <div class="image-container" [class.landscape-contain]="card?.id === 1 || card?.id === 3">
       <img [src]="imagePath" [alt]="'Image for card ' + card?.id" />
       @for (h of hotspots; track h.id) {
         <button
@@ -20,6 +20,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           <span class="material-icons">auto_awesome</span>
         </button>
       }
+    }
     </div>
     @if (modalContent) {
       <app-modal-content [content]="modalContent" (close)="closeModal()" />
@@ -39,8 +40,19 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* Por defecto para la temática 2 */
     }
+    
+    /* 🌟 NUEVOS ESTILOS EXCLUSIVOS PARA LAS TEMÁTICAS 1 Y 3 */
+    .image-container.landscape-contain {
+      background-color: #f5f0e8; /* Fondo beige neutral precioso */
+    }
+    .image-container.landscape-contain img {
+      object-fit: contain; /* Encoje el paisaje para que se vea 100% completo */
+      max-width: 100%;
+      max-height: 100%;
+    }
+
     .hotspot-btn {
       position: absolute;
       transform: translate(-50%, -50%);
