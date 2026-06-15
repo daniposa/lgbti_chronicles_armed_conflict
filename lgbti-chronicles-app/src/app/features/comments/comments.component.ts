@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
 import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
 import { HighlightTooltipsDirective } from '../../shared/directives/highlight-tooltips.directive';
+import { TextParserService } from '../../core/services/text-parser.service';
 
 @Component({
   selector: 'app-comments',
@@ -116,7 +117,8 @@ import { HighlightTooltipsDirective } from '../../shared/directives/highlight-to
      .comments-text ::ng-deep .highlight {
         font-weight: bold;
         color: #2e4a3b; 
-        cursor: help;   /* Hace que el mouse cambie para avisar que se puede pasar por encima */
+        cursor: help;
+        border-bottom: 1px dotted #3779a9; /* Opcional: una leve línea abajo para indicar que es interactivo */
       }
       
       .comments-text ::ng-deep .seccion-lectura {
@@ -155,13 +157,18 @@ import { HighlightTooltipsDirective } from '../../shared/directives/highlight-to
 })
 export class CommentsComponent {
   private sanitizer = inject(DomSanitizer);
+  // INYECTAMOS EL PARSER
+  private parser = inject(TextParserService);
 
-  // Extraemos las propiedades de forma segura mapeando el objeto
-  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT?.text ?? '');
+  // PROCESAMOS EL TEXTO PRIMERO CON EL PARSER ANTES DE ENVIARLO A LA PÁGINA
+  readonly contentHtml: SafeHtml = this.getProcessedHtml(COMMENTS_CONTENT?.text ?? '');
   readonly tooltips: Record<string, string> = COMMENTS_CONTENT?.tooltips ?? {};
 
-  private toSafeHtml(html: string): SafeHtml {
-    const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
+  private getProcessedHtml(rawText: string): SafeHtml {
+    // 1. El parser convierte los {1}Texto{/1} en el HTML interactivo que espera la directiva
+    const parsedHtml = this.parser.markedTextToHtml(rawText);
+    // 2. Sanitizamos y damos los permisos de confianza
+    const clean = this.sanitizer.sanitize(SecurityContext.HTML, parsedHtml) ?? '';
     return this.sanitizer.bypassSecurityTrustHtml(clean);
   }
 }
