@@ -98,6 +98,42 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         color: var(--color-ink);
       }
       
+      /* 1. Justifica todo el texto y añade espacio entre párrafos */
+      .comments-text ::ng-deep p {
+        text-align: justify;
+        text-justify: inter-word; /* Hace que el justificado se vea más limpio */
+        margin-bottom: var(--space-md);
+      }
+
+      /* 2. Aplica la sangría únicamente a la primera línea de cada párrafo */
+      .comments-text ::ng-deep p {
+        text-indent: 2rem; /* Puedes subirlo a 3rem si quieres más sangría */
+      }
+
+      /* 3. Estilos listos para intercalar tus imágenes */
+      .comments-text ::ng-deep .img-izquierda {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        max-width: 40%; /* Evita que la imagen sea gigantesca y tape el texto */
+        height: auto;
+      }
+
+      .comments-text ::ng-deep .img-derecha {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        max-width: 40%;
+        height: auto;
+      }
+
+      /* Limpieza para que los párrafos no se vuelvan locos con el float */
+      .comments-text ::ng-deep p::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
     `,
   ],
 })
