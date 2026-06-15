@@ -126,63 +126,28 @@ import { TextParserService } from '../../core/services/text-parser.service';
         color: inherit;
       }
       
-      /* Contenedor general de la sección */
       .comments-text ::ng-deep .seccion-lectura {
-        display: block; /* Cambia a bloque para permitir la fila del título libre */
-        margin-bottom: var(--space-3xl);
-      }
-
-      /* ✨ CLASE ACTUALIZADA: Formato y fijación estática limpia para el título */
-      .comments-text ::ng-deep .titulo-seccion {
-        text-align: center;
-        font-family: var(--font-display);
-        color: #2e4a3b;
-        font-size: 1.75rem;
-        font-weight: 600;
-        margin: 0 0 var(--space-xl) 0;
-        padding: var(--space-sm) 0;
-        
-        /* Comportamiento Sticky */
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0; /* Se congela en el borde superior de la pantalla */
-        z-index: 10;
-        background: rgba(248, 244, 239, 0.50);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border-bottom: 1px dashed rgba(46, 74, 59, 0.2);
-      }
-      .comments-text ::ng-deep .columna-imagen {
-        position: -webkit-sticky;
-        position: sticky;
-        /* 🌟 Subimos a 12vh o 14vh para darle "aire" y que no se pegue al título al bajar */
-        top: 14vh; 
-        z-index: 5; /* Por debajo del z-index del título para que el texto fluya bien */
-      }
-
-      /* ✨ NUEVA CLASE: El contenedor de las dos columnas abajo del título */
-      .comments-text ::ng-deep .seccion-contenido {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         gap: 40px;
         align-items: start;
+        margin-bottom: var(--space-3xl);
       }
 
-      /* Soporte para la inversión de columnas */
-      .comments-text ::ng-deep .seccion-lectura.invertiva .seccion-contenido {
+      .comments-text ::ng-deep .seccion-lectura.invertida {
         grid-template-columns: 1.5fr 1fr;
       }
 
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 10vh; /* Se congela un poco más abajo del título fijado para no solaparse */
+        top: 15vh;
       }
 
       .comments-text ::ng-deep .columna-imagen img {
         width: auto;
         max-width: 100%;
-        max-height: 75vh;
+        max-height: 80vh;
         object-fit: contain;
         border-radius: 8px;
         display: block;
