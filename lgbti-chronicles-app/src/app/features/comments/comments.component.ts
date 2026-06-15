@@ -104,7 +104,7 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         text-align: justify;
         text-justify: inter-word;
         text-indent: 2rem;
-        color: #3779a9;
+        color: #2e4a3b;
         margin: 0 0 var(--space-md) 0;
       }
 
