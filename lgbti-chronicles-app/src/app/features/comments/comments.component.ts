@@ -110,19 +110,33 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         text-indent: 2rem; /* Puedes subirlo a 3rem si quieres más sangría */
       }
 
-      /* 3. Estilos listos para intercalar tus imágenes */
+     /* Contenedor para cada bloque de lectura (Sección 1, Sección 2, etc.) */
+      .comments-text ::ng-deep .seccion-lectura {
+        display: block;
+        position: relative;
+        margin-bottom: var(--space-2xl); /* Espacio generoso entre secciones */
+      }
+
+      /* Imagen Pegajosa a la Izquierda */
       .comments-text ::ng-deep .img-izquierda {
         float: left;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        max-width: 40%; /* Evita que la imagen sea gigantesca y tape el texto */
+        position: -webkit-sticky; /* Soporte para Safari */
+        position: sticky;
+        top: 18vh;                /* <-- Se queda quieta a esta distancia del tope de la pantalla */
+        margin-right: 30px;
+        margin-bottom: 20px;
+        max-width: 40%;
         height: auto;
       }
 
+      /* Imagen Pegajosa a la Derecha */
       .comments-text ::ng-deep .img-derecha {
         float: right;
-        margin-left: 20px;
-        margin-bottom: 10px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 18vh;                /* <-- Lo mismo para la derecha */
+        margin-left: 30px;
+        margin-bottom: 20px;
         max-width: 40%;
         height: auto;
       }
