@@ -8,8 +8,9 @@
  */
 export const COMMENTS_CONTENT = {
 text: `
-<h2>La traducción como acto político </h2>
+
 <div class="seccion-lectura">
+<h2 class="titulo-seccion">La traducción como acto político </h2>
 <div class="columna-imagen">
  <img 
     src="images/comentarios/comentarios_conflicto.avif" 
@@ -34,9 +35,9 @@ text: `
  </div>
  <hr style="border: none; height: 5px; background-color: #2c2420;">
 
-<h2>Nuestro proceso</h2>
-<div class="seccion-lectura invertida">
 
+<div class="seccion-lectura invertida">
+<h2 class="titulo-seccion">Nuestro proceso</h2>
 <div class="columna-texto">
 <p>
  
