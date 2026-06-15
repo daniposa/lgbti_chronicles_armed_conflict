@@ -6,8 +6,8 @@
  * `<em>`, `<a href="https://…" target="_blank" rel="noopener noreferrer">`,
  * `<img src="images/…" alt="…" width="…">`, etc. Edit this freely as HTML.
  */
-export const COMMENTS_CONTENT = `
-  
+export const COMMENTS_CONTENT = {
+text: `
 <h2>La traducción como acto político </h2>
 <div class="seccion-lectura">
 <div class="columna-imagen">
@@ -370,4 +370,9 @@ https://doi.org/10.1080/14781700.2013.795267</li>
 
 <li>Williams, J. y Chesterman, A. (2002). <i>The Map: A beginner's guide to doing research in translation studies</i>. St. Jerome Publishing.</li>
 </ul>
-`;
+`,
+tooltips: {
+    '1': '<p><strong>FARC-EP</strong> – Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo.</p><p>Organización político-militar...</p>',
+    '2': '<p><strong>Otro término</strong> – Esta es la descripción en español para el segundo cuadro de texto.</p>'
+  }  
+};
