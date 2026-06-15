@@ -96,13 +96,7 @@ export const COMMENTS_CONTENT = `
 
 <h2>La reconstrucción del «yo» oral y su traducción</h2>
 <div class="seccion-lectura invertida">
-<div class="columna-imagen">
-<img 
-    src="images/comentarios/comentarios_oralidad.avif" 
-    alt="Oralidad" 
-    width="400"
-  >
-  </div>
+
   <div class="columna-texto">
   <p>Cuando enmarcamos nuestro proyecto como una traducción de testimonios orales, contábamos con unas ideas previas sobre la tipología textual de nuestro texto fuente y sus posibles desafíos al momento de traducirlo. Aún reconocemos que traducir palabras como «sancocho», [MR17] «tirar pluma» [AF07] o «quebrarle el pescuezo al ciclo de la violencia» [CM01] implican un esfuerzo traductivo en el cual debemos reconocer la identidad de las víctimas y sus discursos. Durante y después del proceso de traducción, estas ideas adoptaron otras formas, pues, a medida que convivíamos con los textos y conversábamos sobre ellos, confirmamos que las palabras son huellas de lo dicho y de lo no dicho, que construyen la identidad de la víctima y que, por lo tanto, no estábamos traduciendo palabras, sino actos de comunicación (Prieto, 1993).</p>
 <p>Aunque nuestras conversaciones abordaron varios temas —esta sección de comentarios es muestra de ello—, en este apartado queremos presentar aquellas que giraron en torno al carácter oral de los testimonios. Primero, consideramos que nuestra traducción debía estar encaminada, no a la reconstrucción completa de ese acto inicial donde las víctimas contaron sus vivencias —dado que es imposible—, sino a la de una representación de la oralidad. Segundo, fuimos conscientes de que, como traductoras en formación, estábamos adquiriendo experiencia lingüística en las lenguas de llegada, lo cual nos permitió darnos cuenta de que un proceso traductivo sin reflexiones podría habernos conducido a una caricaturización de las formas de la palabra hablada. A partir de estos dos puntos, vimos la necesidad de acercarnos a este problema de traducción desde el respeto por la otredad oralizada.</p>
@@ -116,6 +110,13 @@ export const COMMENTS_CONTENT = `
 [Un enfant, tu vois, on ne pense à rien. Nous sommes parties <i>comme ça</i>, et nous étions bien accueillies, avec du <i>chocolat chaud</i>, des biscuits, tout ça… <i>Mais</i> quand mes parents sont arrivés frappant à la porte, tous désespérés, pour leur demander de nous laisser sortir, ils les ont super mal traités, leur ont demandé de partir]</p></blockquote>
 <p>En cuanto a la repetición y a los valores agregados de las palabras, encontramos la construcción «y ya», la cual, aunque está a lo largo del testimonio, su significado no siempre remite a lo mismo. Al leer pausadamente el texto, logramos identificar las relaciones lógicas de los enunciados y esta construcción tiene un valor circunstancial de modo en «Nos fuimos <i>y ya</i>» distinto al valor adversativo de «<i>Y ya</i> cuando llegaron mis papás». Si bien consultamos el diccionario para conocer el uso del adverbio, nos dimos cuenta de que este no era suficiente para reconstruir el sentido, sino que el testimonio mismo acoge las palabras y les da valores propios. En consecuencia, las decisiones traductivas correspondientes fueron «we just went there <i>mindlessly</i> [...] <i>but then when</i> our parents came [...]» en inglés y «nous sommes parties <i>comme ça</i> [...] <i>mais quand</i> mes parents sont arrivés [...]» en francés. Los elementos orales de los testimonios de Leticia y Lina, al ser huellas de lo enunciado en las entrevistas que la CEV llevó a cabo, nos permitieron hacer una traducción reconstructiva (Mejía Quijano <i>et al</i>., 2020) donde la representación de la oralidad remite a lo que las víctimas pudieron haber dicho en lenguas distintas a la usada, y donde nosotras intentamos completar los vacíos generados por el acto de comunicación diferido. Recordamos el carácter inacabado de la traducción para mencionar que cada una de nuestras decisiones es una de las diferentes maneras en las cuales se puede traducir la oralidad de estos u otros textos testimoniales.</p>
 </div>
+<div class="columna-imagen">
+<img 
+    src="images/comentarios/comentarios_oralidad.avif" 
+    alt="Oralidad" 
+    width="400"
+  >
+  </div>
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
@@ -144,13 +145,7 @@ export const COMMENTS_CONTENT = `
 
 <h2>Coexistir en el texto – confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
 <div class="seccion-lectura invertida">
-  <div class="columna-imagen">
-<img 
-    src="images/comentarios/comentarios_metafora.avif" 
-    alt="Metáforas" 
-    width="300"
-  >
-  </div>
+  
   <div class="columna-texto">
   <p>Una vez reflexionamos sobre el lugar de la oralidad en los testimonios y su forma única de pasar a la lengua escrita, es posible enfocarnos en otros elementos que nos ayudan a entender el texto que resulta a partir de la convergencia de estas dos modalidades. Recordemos que, antes de llegar al público colombiano, las palabras de quienes vivieron la guerra pasaron por diversas manos que se encargaron de diversas tareas: transcribir los testimonios, redactar el cuerpo del texto para ofrecer un contexto suficiente para su interpretación, segmentar los testimonios para rescatar lo que consideraron más importante para transmitir la complejidad de la guerra, corregir el estilo del texto general, entre otros trabajos que no alcanzaríamos a enumerar.</p>
   <p>Durante el cambio del contexto en el cual se enmarca el acto comunicativo, en las variables de campo, modo y tenor que considera Halliday (1986), debemos aceptar que, de forma inevitable, surge una variedad de registros que comienzan a confluir dentro del mismo texto. La suma de situaciones bajo las cuales se emitió y modificó el contenido del capítulo de la Comisión, así como el tipo de rasgos que se esperan de él según cada nuevo campo en el que se mueve, producen una combinación de elementos predecibles que comparten espacio con otros que pueden llegar a resultar inesperados dentro del mismo contexto. Por ejemplo, si al pensar en un testimonio tendemos a asociarlo con un mensaje que se da con un tono familiar por medio de un canal oral, es posible que nos sorprenda encontrar testimonios redactados con una puntuación que ya no obedece a las pausas del habla sino a la lógica de lo escrito, o bien con palabras técnicas que de forma aparente no hacen parte del vocabulario de uso cotidiano. Estos factores hacen que, al ser el producto de un contexto diferente, cada testimonio sea distinto, incluso con variaciones de registro dentro de él mismo. Sumadas a estos factores estamos nosotras, traductoras, que llevamos estas palabras a dos nuevas lenguas y, por lo tanto, a dos nuevos contextos culturales.</p>
@@ -159,6 +154,13 @@ export const COMMENTS_CONTENT = `
   <p>Este lenguaje especializado comparte a su vez espacio con un sentido figurado que podemos identificar en forma de metáforas, las cuales, además de funcionar como vehículos de conocimiento abstracto en la academia (Lakoff y Johnson, 1980), se asocian con un registro familiar, como en el caso de los dichos y los refranes. Este es el caso del testimonio de Magali [CM01] al decir que «alguien tiene que <i>quebrarle el pescuezo</i> al ciclo de la violencia». Si bien dentro de los estudios de traducción se reconoce la dificultad particular que supone transferir a otro idioma un elemento tan cultural como una metáfora, para el caso de estos testimonios, y en particular de los fragmentos que reflejaban la violencia de la guerra, decidimos jugar con la equivalencia formal y dinámica (Nida, 1964). Es decir, no nos limitamos a una traducción palabra por palabra de equivalencia formal, sino que intentamos reproducir el significado y efecto que tiene el original en el texto meta: en lugar de utilizar la expresión colocada de «romper el ciclo de violencia» a la que es probable que hiciera referencia la testimoniante, decidimos replicar en las traducciones la extrañeza de la expresión en español, quedando estas como «someone has <i>to break</i> violence cycle’s neck» en inglés y «quelqu'un <i>casser le cou</i> au cycle de la violence» en francés. De esta manera, reconocemos el valor de las metáforas como una herramienta que refleja nuestra concepción de la realidad (Lakoff y Johnson, 1980).</p>
   <p>Sin embargo, no todo el lenguaje figurado de los testimonios está reflejado en toda la extensión de las oraciones, en algunos casos, los matices se encuentran en el uso que se le da a una sola unidad léxica. En el testimonio de Ilse [MM22], por ejemplo, cuando narra su historia de abuso, dice: «Por mi cuerpo <i>pasaron</i> más de treinta hombres» y más adelante complementa con: «Hubo una que se resistió y la cortaron toda con un cuchillo, <i>como si fuera un pescado</i>». Por medio de la elección de las palabras, la mujer narra su cuerpo como un espacio por el cual se transita, <i>se pasa</i>, que es la forma como los abusadores la hicieron sentir. Lo mismo ocurre con el cuerpo de la segunda mujer, a la cual trataron no como a una persona sino como a un animal no humano, razón por la cual quien narra lo relaciona con una imagen que también nos remite a su cotidianidad: la cercanía del municipio San Juan Nepomuceno con el mar.</p>
   <p>La traducción de estos testimonios fue solo una de las múltiples maneras que existen para acercarnos como sociedad a lo que para algunas personas fue una experiencia que marcó un antes y un después en sus vidas, y que ahora se refleja en formas particulares de expresión. Ser conscientes del lenguaje, las metáforas y los registros nos permitió dimensionar el nivel de omnipresencia del conflicto en Colombia, tanto en el discurso de los grandes medios, como en la internalización de la violencia en el día a día. Esperamos que al conservar lo que a simple vista parecen ser anomalías lingüísticas dentro de la categorización de lo que debería o no ser un testimonio y su traducción, logremos despertar la incomodidad frente a lo que, por medio de la repetición, a veces parece reducirse a paisaje.</p>
+  </div>
+  <div class="columna-imagen">
+<img 
+    src="images/comentarios/comentarios_metafora.avif" 
+    alt="Metáforas" 
+    width="300"
+  >
   </div>
   </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
@@ -191,13 +193,7 @@ export const COMMENTS_CONTENT = `
 
 <h2>La cultura que habita fuera de lo propio</h2>
 <div class="seccion-lectura invertida">
-  <div class="columna-imagen">
-<img 
-    src="images/comentarios/comentarios_referencias_culturales.avif" 
-    alt="Referente culturales" 
-    width="300"
-  >
-  </div>
+  
 
   <div class="columna-texto">
   <p>Los testimonios recolectados por la CEV no solo contienen la experiencia de las víctimas, también son un reflejo de la cultura colombiana y los matices que recorren su territorio; fue al traducirlos cuando evidenciamos los retos que implica transferir referentes culturales del español colombiano a las lenguas de llegada. Antes de explicitar las estrategias que optamos para traducir algunos de los referentes culturales de los testimonios traducidos, retomamos la definición sobre cultura de Vermeer quien la define como las convenciones que un individuo que hace parte de una sociedad debe conocer, ya sea para ser como todos o para ser diferente (1987, como se citó en Nord, 1997). Dentro de estas convenciones reconocemos la lengua como una de las tantas formas en las cuales la cultura se materializa en una sociedad, especialmente porque también es la materia prima de la traducción.</p>
@@ -211,6 +207,13 @@ export const COMMENTS_CONTENT = `
   <p>Tal como lo evidenciamos en el ejemplo anterior, los referentes culturales encarnan realidades específicas representadas por símbolos con una carga emocional e identitaria latente, así como eventos únicos que se convierten en historia viva para quienes de primera mano lo han experimentado. Otro ejemplo de estos marcadores culturales lo podemos observar en el testimonio de Ximena [MM02] donde se plasma con detalle la importancia que tiene el territorio para las víctimas; cuando la víctima dice: «sin saber nada de ellos, sepultados en las <i>escombreras</i>», el referente resaltado no busca remitir únicamente a un lugar donde se arrojan escombros que es como normalmente se define una escombrera, en este caso es una referencia directa a un evento que marcó la historia de los habitantes de la Comuna 13 en Medellín. La Escombrera es un lugar que evoca la lucha constante de las familias por la búsqueda de sus familiares desaparecidos, un lugar que encarna el activismo por la justicia y la reparación de las víctimas frente al dolor de vivir con la ausencia de sus seres queridos. En este sentido, una traducción con una palabra que meramente remita a un lugar donde se arroja basura se quedaría corta para expresar esta realidad incrustada en el alma de las comunidades, por lo que el préstamo, acompañado de elementos paratextuales como un texto explicativo o imágenes, es la decisión adoptaba para este referente.</p>
   <p>En los testimonios de Leticia [MR01] y Mariana [SP04] nos encontramos con la palabra «finca», en este caso ocurre algo similar al ejemplo anterior. Cuando Leticia habla sobre cómo cambiaron las dinámicas comunitarias después de tener que abandonar su territorio, dice: «[...] en una vereda se reúnen todas las familias de todas las <i>fincas</i> y hacen fiestas, hacen asados. Acá no. Acá la gente es muy desunida», mientras que Mariana narra el inicio de la violencia que vivió de la siguiente forma: «Me llevaron pa una <i>finca</i> en donde me tuvieron una semana». «Finca» es en su definición base una casa en el campo donde las personas que trabajan en ella también la habitan; en Colombia, sin embargo, la palabra remite a una casa ubicada a las afueras del casco urbano y suele distinguirse entre una casa de campo recreativa —más relacionada con las clases altas—, y una vivienda campesina, generalmente productiva —ligada a una población con dinámicas rurales y comunitarias—. En los testimonios mencionados, cuando nos encontramos con esta palabra nos remitimos únicamente a su segunda acepción y nuestra decisión fue mantener el préstamo en ambas lenguas, no porque no existiera en estas una palabra que pudiese nombrar a una casa en un campo, sino porque «finca» representa algo más. En el caso colombiano, las «fincas» se convirtieron en el objetivo principal para la expropiación y apropiación de tierras, fue allí donde se exacerbaron las violencias generadas por el conflicto armado, en muchas ocasiones fueron espacios de fácil acceso ya fuera por su lejanía respecto al casco urbano, o por el abandono estatal.</p>
   <p>Como traductoras enfrentadas a esta tipología textual, debemos posicionarnos desde un punto que nos permita entrever los elementos, características y formas en las cuales la cultura impregna las voces de las víctimas, nuestro propósito es lograr envolver estas traducciones en la mayor cantidad de vestigios y trazos de aquella realidad contada y que de esta manera los lectores meta puedan acercarse, en la medida de lo posible, a la complejidad de los testimonios. Asimismo, la labor de identificar los referentes mencionados y aplicarles técnicas meditadas, funciona como un mecanismo puntual en el que la cultura de partida se apodera de la traducción e intenta habitarla incluso fuera de casa.</p>
+  </div>
+  <div class="columna-imagen">
+<img 
+    src="images/comentarios/comentarios_referencias_culturales.avif" 
+    alt="Referente culturales" 
+    width="300"
+  >
   </div>
 </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
