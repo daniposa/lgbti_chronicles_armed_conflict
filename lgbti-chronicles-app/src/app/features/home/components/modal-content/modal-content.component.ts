@@ -211,7 +211,6 @@ interface ResolvedModalContent {
         display: block;
         text-align: right;    /* Mueve el texto a la derecha */
         text-indent: 0;       /* Quita la sangría para que no quede desfasado */
-        font-style: italic;   /* Mantiene el estilo en cursiva original */
         margin-top: var(--space-lg);
         color: var(--color-ink-muted);
       }
