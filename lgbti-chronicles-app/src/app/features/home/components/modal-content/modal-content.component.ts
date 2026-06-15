@@ -199,15 +199,7 @@ interface ResolvedModalContent {
       .modal-body.chapter-text ::ng-deep > p:last-child {
         margin-bottom: 0;
       }
-      .modal-body.chapter-text ::ng-deep > p:first-child::first-letter {
-        font-family: var(--font-display);
-        font-size: 3rem;
-        float: left;
-        line-height: 1;
-        margin-right: 0.35rem;
-        margin-top: 0.05rem;
-        color: var(--color-ink);
-      }
+      
       .highlight {
         background: rgba(139, 105, 20, 0.15);
         padding: 0 0.15em;
