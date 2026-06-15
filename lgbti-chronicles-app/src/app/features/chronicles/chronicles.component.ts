@@ -185,31 +185,56 @@ type Tab = 'intro' | 'chronicles';
         border-bottom-color: var(--color-accent);
       }
 
-      /* ── intro tab ── */
+     /* ── intro tab ── */
       .page-main {
         position: relative;
         z-index: 1;
       }
+      
+      /* ✨ 1. CAPA LIGERA DETRÁS DEL TEXTO (Sin blur, muy sutil) */
       .intro-text {
         width: 70%;
         max-width: 1200px;
-        margin: 0 auto;
-        padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+        margin: var(--space-xl) auto;
+        
+        background-color: rgba(248, 244, 239, 0.15); /* Capa translúcida color papel/crema */
+        padding: var(--space-xl) var(--space-2xl);    /* Espaciado interno para que no pegue a los bordes */
+        border-radius: 6px;                           /* Esquinas sutilmente suavizadas */
+        
         font-size: 1.05rem;
         line-height: 1.85;
         color: var(--color-ink);
       }
       
-      /* Aplica el justificado a todos los párrafos de la introducción */
+      /* Párrafos normales de la introducción */
       .intro-text ::ng-deep p {
         text-align: justify;
         text-justify: inter-word;
         margin-bottom: var(--space-md);
+        text-indent: 2rem;
+      }
+      
+      /* ✨ 2. CENTRADO EXCLUSIVO DE IMAGEN Y NOTITA */
+      .intro-text ::ng-deep .bloque-imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    /* Centra horizontalmente la imagen y la nota */
+        justify-content: center;
+        width: 100%;
+        margin: var(--space-xl) 0;
       }
 
-      /* Aplica la sangría mayor únicamente en la primera línea de cada párrafo */
-      .intro-text ::ng-deep p {
-        text-indent: 2rem;
+      .intro-text ::ng-deep .bloque-imagen img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto var(--space-xs) auto; /* Asegura el centrado de la pieza */
+      }
+
+      .intro-text ::ng-deep .bloque-imagen p {
+        text-align: center;         /* Centra el texto de la nota */
+        text-indent: 0 !important;  /*  Quita la sangría de párrafo normal obligatoriamente */
+        margin-top: var(--space-xs);
       }
      
 
