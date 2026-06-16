@@ -212,10 +212,10 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block;                               
       }
 
-      /* ⚖️ REGRESAMOS AL DISEÑO FINO ORIGINAL */
+      /* ⚖️ OPTIMIZACIÓN DE ESPACIOS INTERNOS */
       .legal-footer {
         margin-top: var(--space-xl);
-        padding: var(--space-lg); /* Conserva la finura de la caja previa */
+        padding: var(--space-md) var(--space-lg); /* Reducido padding arriba/abajo para cortar espacio muerto */
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
         background: rgba(248, 244, 239, 0.65);      
@@ -229,7 +229,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: var(--space-xl);
+        gap: var(--space-lg); /* Ajustado para que las columnas se acerquen más */
       }
       .legal-col {
         display: flex;
@@ -237,67 +237,59 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
       }
       
-      /* Ajustes Columna 1 (Izquierda) */
+      /* Columna 1 (Izquierda): Más ajustada al ancho real de los logos */
       .col-patrocinadores {
-        flex: 0 0 200px;
+        flex: 0 0 190px;
         align-items: center;
-        gap: var(--space-md);
+        gap: var(--space-sm); /* Logos más juntos verticalmente */
       }
       
-      /* 🚀 AGRANDAMOS DIRECTAMENTE LAS IMÁGENES CON UN FACTOR DE ESCALA INTEGRADO */
+      /* Crecimiento orgánico real (sin transform) */
       .img-udea {
-        max-height: 45px;
+        max-height: 58px; /* ¡Más grande! Ocupa el espacio real */
         width: auto;
-        transform: scale(1.25); /* Crece un 25% dentro de su espacio sin forzar la caja */
-        margin-bottom: var(--space-xs);
       }
       .img-fundacion {
-        max-height: 40px;
+        max-height: 50px; /* ¡Más grande! */
         width: auto;
-        transform: scale(1.25); /* Crece proporcionalmente */
-        margin-top: var(--space-xs);
       }
 
-      /* Ajustes Columna 2 (Centro) */
+      /* Columna 2 (Centro): Espacio optimizado para el logo redondo */
       .col-nuestro-logo {
-        flex: 0 0 120px;
+        flex: 0 0 130px;
         align-items: center;
       }
       .img-proyecto-redondo {
-        max-height: 90px;
+        max-height: 120px; /* ¡Tamaño premium de verdad! Ocupa todo el alto de la caja */
         width: auto;
-        transform: scale(1.35); /* ¡Agrandamos significativamente tu logo central! */
       }
 
-      /* Ajustes Columna 3 (Derecha) */
+      /* Columna 3 (Derecha) */
       .col-texto-derechos {
         flex: 1 1 0;
         text-align: left;
         font-family: var(--font-body);
       }
       .txt-patrimoniales {
-        font-size: 0.9rem;
+        font-size: 0.95rem; /* Un pelín más grande para emparejar la lectura */
         font-weight: 600;
         color: var(--color-ink);
         margin: 0 0 var(--space-xs) 0;
       }
       .txt-licencia {
-        font-size: 0.82rem;
+        font-size: 0.85rem;
         color: var(--color-ink-muted);
-        line-height: 1.5;
-        margin: 0 0 var(--space-sm) 0;
+        line-height: 1.4;
+        margin: 0 0 var(--space-xs) 0;
       }
       .cc-logo-wrapper {
         display: block;
+        margin-top: 4px;
       }
       .img-cc {
         height: 28px;
         width: auto;
         opacity: 0.85;
-        transition: opacity 0.2s ease;
-      }
-      .img-cc:hover {
-        opacity: 1;
       }
 
       /* 📱 RESPONSIVE */
@@ -311,10 +303,6 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           flex: auto;
           flex-direction: row; 
           gap: var(--space-xl);
-        }
-        .img-udea, .img-fundacion, .img-proyecto-redondo {
-          transform: scale(1); /* Desactivamos escalado en móviles para conservar orden */
-          margin: 0;
         }
         .col-texto-derechos {
           text-align: center;
