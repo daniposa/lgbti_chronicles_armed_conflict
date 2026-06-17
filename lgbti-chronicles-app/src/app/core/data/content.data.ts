@@ -107,7 +107,7 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Apoyo Institucional / Institutional Support',
-      names: ' Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Jaime Usma (director Escuela de Idiomas / School of Languages director)<br>Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages)',
+      names: ' Andrea Tobón Marín (Comunicadora / Communications officer)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Jaime Usma (director Escuela de Idiomas / School of Languages director)<br>Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas / Research Coordination Office of the School of Languages)<br>Juan Camilo Monsalve García (Diseñador / Designer)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones / Research Coordination assistant)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas / Translation Agency, School of Languages)',
     },
   ],
 };
