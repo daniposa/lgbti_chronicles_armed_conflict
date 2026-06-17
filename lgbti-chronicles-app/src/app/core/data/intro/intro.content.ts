@@ -17,14 +17,14 @@ export const INTRO_CONTENT: LocalizedContent = {
 <p>Malgré des antécédents de violences politiques étroitement liés à la violence ultérieure, la commission choisit 1958 et la création du « Frente Nacional » comme point de départ du conflit armé et 2016 avec la signature d’un accord de paix comme point final. La décennie de 1995 à 2004 fut la période où il y eu le plus de victimes avec approximativement 45&nbsp;% des victimes totales sur cette période.  
   </p>
   <h3><small><i>Figure 1. Frise chronologique du conflit armé colombien à partir de la périodisation de la Commission de la vérité </i></small></h3>
-  <div class="bloque-imagen">
+  <p><div class="bloque-imagen">
   <img 
       src="images/comentarios/linea fr.jpeg"
       alt="Linea francés"
       style="width: 100%; max-width: 800px;"
     >
-    </div>
-   <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</a> (CEV, 2022b).</small></p>
+    </div><br>
+   <small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</a> (CEV, 2022b).</small></p>
 
   <p>Différente mais latente, la violence du conflit est présente dans tous les territoires nationaux colombiens, ruraux comme urbains, elle a aussi une dimension internationale. Villages, montagnes, villes, rivières, canyons, jungles, páramos, déserts, quartiers et versants de montagnes ont été témoins des scènes d’horreurs, mais aussi de celles d’espérance. La Commission distingue 11 régions&nbsp;: Amazonie, Antioquia, sud de Cordoba, Bas Atrato Chocano, Caraïbes, Centre, Axe Caféier, Frontière Nord-orientale, Magdalena moyen, Nariño et sud du Cauca, Orinoquia, Pacifique, Vallée et nord du Cauca. Antioquia est le département qui enregistre le plus grand nombre total de victimes, représentant 18,74&nbsp;% des victimes en 2025 (Unité pour les Victimes, 2025).</p>
   
@@ -78,7 +78,7 @@ export const INTRO_CONTENT: LocalizedContent = {
       style="width: 100%; max-width: 800px;"
     >
     </div>
-    <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</a> (CEV, 2022b).</small></p>
+    <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</a> (CEV, 2022b).</small></p>
     
   <p>The violence was both differentiated and pervasive, reaching across Colombia's entire national territory, rural and urban alike,  and even extending beyond its borders. Towns, mountains, cities, rivers, canyons, jungles, Andean moorlands, deserts, neighborhoods, and rural settlements all became sites of atrocity, but also of resilience. The Commission identifies 11 regions: Amazonia; Antioquia, southern Córdoba, and Lower Atrato River region of Choco; Caribbean; Central; Coffee Region; Northeastern Border; Middle Magdalena; Nariño and southern Cauca; Orinoquía; Pacific; and Valle and northern Cauca. Antioquia stands out as the department with the highest number of victims, representing 18.74&nbsp;% of the national total as of 2025 (Victims Unit, 2025).</p>
   <h3><i>Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></h3>
