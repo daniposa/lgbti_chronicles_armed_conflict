@@ -37,7 +37,7 @@ export const CHRONICLE_T3_23: LocalizedModalContent = {
   },
   contextInfo: {
     es: `<p>Lugar: Santander de Quilichao, Cauca</p><p>Año: 2007</p><p>Hecho(s) victimizante(s): asesinato, expropiación de tierras</p><p>Actor armado: Bloque Calima de las AUC</p>`,
-    fr: `<p>Lieu : Santander de Quilichao, Cauca</p><p>Date : 2007</p><p>Fait(s) victimisant(s) : assassinat, dépossession de terres</p><p>Acteur armé : Bloque Calima des AUC</p>`,
-    en: `<p>Place: Santander de Quilichao, Cauca</p><p>Date: 2007</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: Bloque Calima of the AUC</p>`,
+    fr: `<p>Lieu : Santander de Quilichao, Cauca</p><p>Date : 2007</p><p>Fait(s) victimisant(s) : assassinat, dépossession de terres</p><p>Acteur armé : Bloque Calima, AUC</p>`,
+    en: `<p>Place: Santander de Quilichao, Cauca</p><p>Date: 2007</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: Bloque Calima, AUC</p>`,
   },
 };
