@@ -42,15 +42,6 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         <section class="legal-footer" aria-label="Información legal y licencias">
           <div class="legal-three-columns">
             
-            <div class="legal-col col-patrocinadores">
-              <img src="images/logos/logo_escuela_verde.avif" alt="Logo Universidad de Antioquia" class="footer-img img-udea" />
-              <img src="images/logos/logo_fundacion.avif" alt="Logo Fundación Patrocinadora" class="footer-img img-fundacion" />
-            </div>
-            
-            <div class="legal-col col-nuestro-logo">
-              <img src="images/logos/logo_texto.png" alt="Logo LGBTI Chronicles" class="footer-img img-proyecto-redondo" />
-            </div>
-            
             <div class="legal-col col-texto-derechos">
               <p class="txt-patrimoniales">
                 Derechos patrimoniales, Universidad de Antioquia.
@@ -65,6 +56,15 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
                   <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licencia Creative Commons BY-NC-SA 4.0" class="img-cc" />
                 </a>
               </div>
+            </div>
+
+            <div class="legal-col col-nuestro-logo">
+              <img src="images/logos/logo_texto.png" alt="Logo LGBTI Chronicles" class="footer-img img-proyecto-redondo" />
+            </div>
+
+            <div class="legal-col col-patrocinadores">
+              <img src="images/logos/logo_escuela_verde.avif" alt="Logo Universidad de Antioquia" class="footer-img img-udea" />
+              <img src="images/logos/logo_fundacion.avif" alt="Logo Fundación Patrocinadora" class="footer-img img-fundacion" />
             </div>
 
           </div>
@@ -303,6 +303,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           flex: auto;
           flex-direction: row; 
           gap: var(--space-xl);
+          justify-content: center; /* Asegura el centrado correcto en móviles */
         }
         .col-texto-derechos {
           text-align: center;
