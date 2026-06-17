@@ -56,7 +56,7 @@ es sentir que sigo vivo.</i></p>
 
  « Sale connard, on va te buter ! »<br>  
 
-La réponse réduisant à zéro.<br>
+La réponse se réduisant à zéro.<br>
 
 Les heures passent comme si elles étaient des jours,<br>   
 
