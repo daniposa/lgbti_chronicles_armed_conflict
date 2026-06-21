@@ -31,6 +31,7 @@ text: `
     alt="Mapa ES" 
   >
   <figcaption><i>Nota.</i> Fuente <a href="https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones" target="_blank">https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</a>(CEV, 2022c).</figcaption>
+  </figure>
   
   <p>No solo se vivieron dinámicas territoriales diversas, sino que también los impactos fueron diferenciados según poblaciones específicas: campesinos, mujeres, poblaciones étnicas, población LGBTIQ+, sectores políticos, estudiantes, funcionarios públicos, empresarios, personas con discapacidades y un largo etcétera. En relación con todos estos enfoques diferenciales, se tiene que la población víctima del conflicto armado es la población más empobrecida del país: para el 2024 el 44,6&nbsp;%, el 18,1&nbsp;% y el 18,4&nbsp;% de las víctimas se encontraban en situación de pobreza monetaria, extrema y multidimensional, respectivamente (DANE, 2026).</p>
 
