@@ -160,6 +160,17 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           opacity: 0.82;
           transform: translate(-50%, -50%) scale(0.9);
         }
+        /* 🪄 TRUCO MAESTRO: Forzamos al elemento inyectado en el body a renderizarse 
+         en la capa del viewport de pantalla completa */
+      :global(body):fullscreen .highlight-tooltip,
+      :global(body):fullscreen .tooltip-box,
+      ::ng-deep :fullscreen .highlight-tooltip {
+        position: fixed !important;
+        z-index: 2147483647 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
       }
     `,
   ],
