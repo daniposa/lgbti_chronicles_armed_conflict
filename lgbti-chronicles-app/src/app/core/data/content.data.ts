@@ -109,7 +109,7 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Apoyo Institucional, Escuela de Idiomas',
-      names: ' Andrea Tobón Marín (comunicadora)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones)<br>Jaime Usma (director)<br>Jorge Mario Porras Garzón (coordinador de Investigaciones)<br>Juan Camilo Monsalve García (diseñador)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones)<br>Mario David Palacio (coordinador de la Agencia de Traducción)',
+      names: ' Andrea Tobón Marín (comunicadora)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones)<br>Jaime Alonso Usma Wilches (director)<br>Jorge Mario Porras Garzón (coordinador de Investigaciones)<br>Juan Camilo Monsalve García (diseñador)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones)<br>Mario David Palacio (coordinador de la Agencia de Traducción)',
     },
   ],
 };
