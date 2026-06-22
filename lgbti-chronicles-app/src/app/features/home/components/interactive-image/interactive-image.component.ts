@@ -142,7 +142,8 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       }
 
       app-modal-content {
-        z-index: 20; 
+        position: relative;
+        z-index: 999999 !important; 
       }
 
       @keyframes sparkle-pulse {
