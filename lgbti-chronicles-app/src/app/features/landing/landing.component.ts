@@ -113,7 +113,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block !important;
         width: 100% !important;
         max-width: 950px !important;
-        min-height: 140px; 
+        height: auto !important;
         text-align: center;
         white-space: pre-line;
         word-break: keep-all;
