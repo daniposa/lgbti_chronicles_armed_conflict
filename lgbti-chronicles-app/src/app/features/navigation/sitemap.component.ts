@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 import type { Language } from '../../core/services/language.service';
 import { CARDS_DATA, LANDING_BUTTONS, PAGE_CONFIG } from '../../core/data/content.data';
 
-/** One entry in the sitemap drawer (optional nested children). */
 interface SitemapItem {
   label: string;
   route: string;
@@ -21,11 +20,7 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
     label: landingBtn?.label ?? route,
     route,
     children: [
-      {
-        label: tabIntro,
-        route,
-        queryParams: { tab: 'intro' },
-      },
+      { label: tabIntro, route, queryParams: { tab: 'intro' } },
       {
         label: tabChronicles,
         route,
@@ -62,14 +57,7 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
       <nav class="sitemap-drawer" role="navigation" aria-label="Site map">
         <header class="sitemap-header">
           <h2 class="sitemap-title">Mapa del sitio</h2>
-          <button
-            type="button"
-            class="sitemap-close"
-            aria-label="Close navigation"
-            (click)="close()"
-          >
-            &times;
-          </button>
+          <button type="button" class="sitemap-close" aria-label="Close navigation" (click)="close()">&times;</button>
         </header>
         <ul class="sitemap-list">
           @for (item of sitemap; track item.route + item.label) {
@@ -79,7 +67,7 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
                 [routerLink]="item.route"
                 [queryParams]="item.queryParams ?? undefined"
                 [fragment]="item.fragment ?? undefined"
-                (click)="close()"
+                (click)="navigateTo(item)"
               >
                 {{ item.label }}
               </a>
@@ -92,7 +80,7 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
                         [routerLink]="child.route"
                         [queryParams]="child.queryParams ?? undefined"
                         [fragment]="child.fragment ?? undefined"
-                        (click)="close()"
+                        (click)="navigateTo(child)"
                       >
                         {{ child.label }}
                       </a>
@@ -108,124 +96,22 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
   `,
   styles: [
     `
-      .sitemap-toggle {
-        position: fixed;
-        top: var(--space-sm);
-        left: var(--space-sm);
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-        width: 44px;
-        height: 44px;
-        padding: var(--space-xs);
-        border: 1px solid var(--color-border);
-        border-radius: 4px;
-        background: rgba(245, 240, 232, 0.92);
-        cursor: pointer;
-        transition:
-          background 0.2s,
-          border-color 0.2s;
-        box-shadow: var(--shadow-soft);
-      }
-      .sitemap-toggle:hover {
-        background: var(--color-paper-warm);
-        border-color: var(--color-ink-light);
-      }
-      .sitemap-toggle .bar {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: var(--color-ink);
-        border-radius: 1px;
-      }
-      .sitemap-overlay {
-        position: fixed;
-        inset: 0;
-        z-index: 101;
-        background: rgba(44, 36, 32, 0.35);
-      }
-      .sitemap-drawer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 102;
-        width: min(320px, 85vw);
-        height: 100vh;
-        overflow-y: auto;
-        background: var(--color-paper);
-        border-right: 1px solid var(--color-border);
-        box-shadow: var(--shadow-soft);
-        animation: sitemap-slide-in 0.25s ease-out;
-      }
-      @keyframes sitemap-slide-in {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-      .sitemap-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: var(--space-md) var(--space-lg);
-        border-bottom: 1px solid var(--color-border);
-        background: rgba(245, 240, 232, 0.9);
-      }
-      .sitemap-title {
-        margin: 0;
-        font-family: var(--font-display);
-        font-size: 1.1rem;
-        font-weight: 500;
-        color: var(--color-ink);
-      }
-      .sitemap-close {
-        font-size: 1.5rem;
-        line-height: 1;
-        color: var(--color-ink-muted);
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: var(--space-xs);
-      }
-      .sitemap-close:hover {
-        color: var(--color-ink);
-      }
-      .sitemap-list,
-      .sitemap-sublist {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .sitemap-list {
-        padding: var(--space-md) 0;
-      }
-      .sitemap-sublist {
-        padding-left: var(--space-md);
-      }
-      .sitemap-link {
-        display: block;
-        padding: var(--space-xs) var(--space-lg);
-        font-family: var(--font-body);
-        font-size: 0.95rem;
-        color: var(--color-ink);
-        text-decoration: none;
-        transition:
-          background 0.15s,
-          color 0.15s;
-      }
-      .sitemap-link:hover {
-        background: var(--color-paper-warm);
-        color: var(--color-accent);
-      }
-      .sitemap-link.depth-1 {
-        font-size: 0.9rem;
-        color: var(--color-ink-muted);
-        padding-left: var(--space-xl);
-      }
+      .sitemap-toggle { position: fixed; top: var(--space-sm); left: var(--space-sm); z-index: 100; display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: var(--space-xs); border: 1px solid var(--color-border); border-radius: 4px; background: rgba(245, 240, 232, 0.92); cursor: pointer; transition: background 0.2s, border-color 0.2s; box-shadow: var(--shadow-soft); }
+      .sitemap-toggle:hover { background: var(--color-paper-warm); border-color: var(--color-ink-light); }
+      .sitemap-toggle .bar { display: block; width: 100%; height: 2px; background: var(--color-ink); border-radius: 1px; }
+      .sitemap-overlay { position: fixed; inset: 0; z-index: 101; background: rgba(44, 36, 32, 0.35); }
+      .sitemap-drawer { position: fixed; top: 0; left: 0; z-index: 102; width: min(320px, 85vw); height: 100vh; overflow-y: auto; background: var(--color-paper); border-right: 1px solid var(--color-border); box-shadow: var(--shadow-soft); animation: sitemap-slide-in 0.25s ease-out; }
+      @keyframes sitemap-slide-in { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+      .sitemap-header { display: flex; align-items: center; justify-content: space-between; padding: var(--space-md) var(--space-lg); border-bottom: 1px solid var(--color-border); background: rgba(245, 240, 232, 0.9); }
+      .sitemap-title { margin: 0; font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--color-ink); }
+      .sitemap-close { font-size: 1.5rem; line-height: 1; color: var(--color-ink-muted); background: none; border: none; cursor: pointer; padding: var(--space-xs); }
+      .sitemap-close:hover { color: var(--color-ink); }
+      .sitemap-list, .sitemap-sublist { list-style: none; margin: 0; padding: 0; }
+      .sitemap-list { padding: var(--space-md) 0; }
+      .sitemap-sublist { padding-left: var(--space-md); }
+      .sitemap-link { display: block; padding: var(--space-xs) var(--space-lg); font-family: var(--font-body); font-size: 0.95rem; color: var(--color-ink); text-decoration: none; transition: background 0.15s, color 0.15s; }
+      .sitemap-link:hover { background: var(--color-paper-warm); color: var(--color-accent); }
+      .sitemap-link.depth-1 { font-size: 0.9rem; color: var(--color-ink-muted); padding-left: var(--space-xl); }
     `,
   ],
 })
@@ -261,6 +147,21 @@ export class SitemapComponent {
 
   close(): void {
     this.open.set(false);
+  }
+
+  // 🛠️ FUNCIÓN MÁGICA: Fuerza el scroll nativo inmediatamente al hacer clic
+  navigateTo(item: SitemapItem): void {
+    this.close();
+    
+    if (item.fragment) {
+      // Le damos un respiro mínimo de 50ms para cambiar de ruta si hace falta, y buscamos el elemento
+      setTimeout(() => {
+        const element = document.getElementById(item.fragment!);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   }
 
   @HostListener('document:keydown.escape')
