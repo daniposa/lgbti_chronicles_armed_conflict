@@ -92,13 +92,13 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         z-index: 1;
         text-align: center;
         padding: var(--space-xl);
-        width: 70%;
-        max-width: 1000px;
+        width: 75%;
+        max-width: 1100px; /* Ampliado un poquito el contenedor base para dar más aire */
       }
       
       .landing-title {
         font-family: var(--font-display);
-        font-size: clamp(1.8rem, 5vw, 3.6rem); 
+        font-size: clamp(1.8rem, 4.8vw, 3.5rem); /* Ajustado sutilmente el máximo para asegurar la línea */
         font-weight: 600;
         color: #ffffff;
         line-height: 1.3;
@@ -110,16 +110,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
         
-        /* 🛠️ SOLUCIÓN AL DESFASE: Asegura centrado simétrico estricto ocupando el contenedor base */
+        /* 🛠️ FIJAR ESTRUCTURA DE 2 LÍNEAS */
+        display: block !important; /* Cambiado de flex a block para controlar saltos manuales */
         width: 100% !important;
-        max-width: 100% !important;
-        min-height: 140px; /* Caja fija para evitar saltos al cambiar entre idiomas */
-        
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        max-width: 950px !important;
+        min-height: 140px; 
         text-align: center;
-        white-space: pre-line;
+        white-space: pre-line; /* Clave: hace que respete el salto de línea real del string */
+        word-break: keep-all;  /* Evita que rompa palabras a la mitad */
       }
       
       .landing-buttons {
@@ -127,7 +125,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        align-items: stretch; /* 🛠️ Fuerza a que todos los botones midan exactamente lo mismo de alto */
+        align-items: stretch;
         gap: var(--space-md);
       }
       
@@ -137,7 +135,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         min-width: 0;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Centra el contenido internamente si mide de más */
+        justify-content: center;
         text-align: center;
         padding: var(--space-lg) var(--space-md);
         border: 1px solid var(--color-border);
@@ -298,65 +296,4 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         margin: 0 0 var(--space-xs) 0;
       }
       
-      .txt-licencia {
-        font-size: 0.85rem;
-        color: var(--color-ink-muted);
-        line-height: 1.4;
-        margin: 0 0 var(--space-xs) 0;
-      }
-      
-      .cc-logo-wrapper {
-        display: block;
-        margin-top: 4px;
-      }
-      
-      .img-cc {
-        height: 28px;
-        width: auto;
-        opacity: 0.85;
-      }
-
-      @media (max-width: 850px) {
-        .legal-three-columns {
-          flex-direction: column;
-          gap: var(--space-lg);
-          text-align: center;
-        }
-        .col-patrocinadores {
-          flex: auto;
-          flex-direction: row; 
-          gap: var(--space-xl);
-          justify-content: center;
-        }
-        .col-texto-derechos {
-          text-align: center;
-        }
-        .cc-logo-wrapper {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    ` 
-  ],
-})
-export class LandingComponent {
-  defaultTitle = PAGE_CONFIG.title.es;
-  displayedTitle = this.defaultTitle;
-
-  buttons = LANDING_BUTTONS;
-  credits = LANDING_CREDITS;
-
-  onHoverButton(routerLink: string): void {
-    if (routerLink.includes('/en')) {
-      this.displayedTitle = PAGE_CONFIG.title.en;
-    } else if (routerLink.includes('/fr')) {
-      this.displayedTitle = PAGE_CONFIG.title.fr;
-    } else {
-      this.displayedTitle = this.defaultTitle;
-    }
-  }
-
-  onLeaveButton(): void {
-    this.displayedTitle = this.defaultTitle;
-  }
-}
+      .
