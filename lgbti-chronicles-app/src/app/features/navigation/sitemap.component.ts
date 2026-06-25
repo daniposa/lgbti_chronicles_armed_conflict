@@ -77,8 +77,8 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
               <a
                 class="sitemap-link"
                 [routerLink]="item.route"
-                [queryParams]="item.queryParams ?? null"
-                [fragment]="item.fragment ?? null"
+                [queryParams]="item.queryParams ?? undefined"
+                [fragment]="item.fragment ?? undefined"
                 (click)="close()"
               >
                 {{ item.label }}
@@ -90,8 +90,8 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
                       <a
                         class="sitemap-link depth-1"
                         [routerLink]="child.route"
-                        [queryParams]="child.queryParams ?? null"
-                        [fragment]="child.fragment ?? null"
+                        [queryParams]="child.queryParams ?? undefined"
+                        [fragment]="child.fragment ?? undefined"
                         (click)="close()"
                       >
                         {{ child.label }}
